@@ -1,0 +1,42 @@
+@import"variables";
+
+#profile{
+    background: $bg-color2; 
+    line-height: 2;
+    ul{
+        @include flex;
+        padding: 5% 3%;
+        li{
+            width: 50%;
+            text-align: center;
+            padding: 1%;               
+            }
+            h2{
+                @include font($font-color2,20px);
+                font-weight: bolder;
+                margin: 2% 0;
+            }
+            h3{
+                @include font($bk,14px);
+                width: 90%;
+                margin: auto;
+            }
+            a{
+                border-bottom: 1px solid $bk;
+                padding-bottom: 3px;
+                &:hover{
+                    color:$bg-color1;
+                    border-bottom: 1px solid $bg-color1;
+                }
+            }
+            p{
+                @include font($bk,15px);
+                width: 90%;
+                margin: auto;
+                padding: 2% 0 0;
+            }
+            img{
+                @include img;
+            }
+    }
+}

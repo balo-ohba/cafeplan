@@ -1,0 +1,25 @@
+//bg-color
+$bg-color1: rgba(253, 160, 21);
+$bg-color2: rgba(255, 241, 220);
+$bg-color3:rgba(252,239,207,80%);
+$bk:rgb(10, 10, 10);
+//font-color
+$font-color1: rgba(253, 160, 21);
+$font-color2: #74B4E6;
+$font-color3: rgb(255, 255, 255);
+
+@mixin flex {
+    display: flex;
+    justify-content:center;
+    align-items: center;    
+}
+@mixin img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;    
+}
+@mixin font($color,$size){
+    color: $color;
+    font-size: $size;
+    text-align: justify;
+}
