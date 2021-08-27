@@ -16,10 +16,18 @@
 }
 
 #profile {
-  background: #fff1dc;
+  background-color: #F9EDD4;
+  background-image: linear-gradient(45deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%), linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
+  background-size: 60px 60px;
+  -webkit-background-size: 20px 20px;
+  background-position: 0 0, 30px 30px;
   line-height: 2;
 }
-#profile h2 {
+#profile div {
+  background-color: #f9edd4;
+  margin: 5%;
+}
+#profile div h2 {
   color: #74B4E6;
   font-size: 32px;
   text-align: justify;
@@ -27,25 +35,25 @@
   padding: 5%;
   text-align: center;
 }
-#profile ul li ul {
+#profile div ul li ul {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5% 3%;
 }
-#profile ul li ul li {
+#profile div ul li ul li {
   width: 45%;
   text-align: center;
   padding: 1%;
 }
-#profile ul li ul li h3 {
+#profile div ul li ul li h3 {
   color: #0a0a0a;
   font-size: 20px;
   text-align: justify;
   width: 90%;
   margin: auto;
 }
-#profile ul li ul li p {
+#profile div ul li ul li p {
   color: #0a0a0a;
   font-size: 15px;
   text-align: justify;
@@ -53,7 +61,7 @@
   margin: auto;
   padding: 2% 0 0;
 }
-#profile ul li ul li img {
+#profile div ul li ul li img {
   width: 100%;
   height: auto;
   border-radius: 5px;

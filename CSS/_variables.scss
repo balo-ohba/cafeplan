@@ -2,11 +2,12 @@
 $bg-color1: rgba(253, 160, 21);
 $bg-color2: rgba(255, 241, 220);
 $bg-color3:rgba(252,239,207,80%);
-$bk:rgb(10, 10, 10);
+
 //font-color
 $font-color1: rgba(253, 160, 21);
 $font-color2: #74B4E6;
 $font-color3: rgb(255, 255, 255);
+$bk:rgb(10, 10, 10);
 
 @mixin flex {
     display: flex;
@@ -22,4 +23,14 @@ $font-color3: rgb(255, 255, 255);
     color: $color;
     font-size: $size;
     text-align: justify;
+}
+@mixin bg {
+    background-color: #F9EDD4;
+    background-image: -webkit-linear-gradient(45deg,  #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%),
+                      -webkit-linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
+    background-image: linear-gradient(45deg,  #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%),
+                      linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
+    background-size: 60px 60px;
+    -webkit-background-size: 20px 20px;
+    background-position: 0 0, 30px 30px;
 }

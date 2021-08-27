@@ -16,39 +16,43 @@
 }
 
 #profile{
-    background: $bg-color2; 
+    @include bg; 
     line-height: 2;
-    h2{
-        @include font($font-color2,32px);
-        font-weight: bolder;
-        padding: 5%;
-        text-align: center;
-    }
-    ul{
-        li{
-            ul{
-                @include flex;
-                padding: 5% 3%;
-                li{
-                    width: 45%;
-                    text-align: center;
-                    padding: 1%;   
-                    h3{
-                        @include font($bk,20px);
-                        width: 90%;
-                        margin: auto;
-                    }
-                    p{
-                        @include font($bk,15px);
-                        width: 90%;
-                        margin: auto;
-                        padding: 2% 0 0;
-                    }
-                    img{
-                        @include img;
-                    }
-                }      
-            }       
+    div{
+        background-color: rgb(249, 237, 212);
+        margin: 5%;
+        h2{
+            @include font($font-color2,32px);
+            font-weight: bolder;
+            padding: 5%;
+            text-align: center;
+        }
+        ul{
+            li{
+                ul{
+                    @include flex;
+                    padding: 5% 3%;
+                    li{
+                        width: 45%;
+                        text-align: center;
+                        padding: 1%;   
+                        h3{
+                            @include font($bk,20px);
+                            width: 90%;
+                            margin: auto;
+                        }
+                        p{
+                            @include font($bk,15px);
+                            width: 90%;
+                            margin: auto;
+                            padding: 2% 0 0;
+                        }
+                        img{
+                            @include img;
+                        }
+                    }      
+                }       
+            }
         }
     }
 }
