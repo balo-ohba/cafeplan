@@ -25,7 +25,7 @@
 }
 #profile div {
   background-color: #f9edd4;
-  margin: 5%;
+  margin: 56px;
 }
 #profile div h2 {
   color: #74B4E6;
@@ -39,12 +39,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 3%;
+  margin: 56px;
 }
 #profile div ul li ul li {
-  width: 45%;
+  width: 50%;
   text-align: center;
-  padding: 1%;
 }
 #profile div ul li ul li h3 {
   color: #0a0a0a;
@@ -89,7 +88,10 @@
   text-align: center;
   padding: 1%;
 }
-#point ul li img {
+#point ul li div p {
+  text-align: justify;
+}
+#point ul li div img {
   width: 100%;
   height: auto;
   border-radius: 5px;
