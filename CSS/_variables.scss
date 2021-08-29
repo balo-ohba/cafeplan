@@ -1,30 +1,18 @@
-//bg-color
-$bg-color1: rgba(253, 160, 21);
-$bg-color2: rgba(255, 241, 220);
-$bg-color3:rgba(252,239,207,80%);
-
-//font-color
-$font-color1: rgba(253, 160, 21);
-$font-color2: #74B4E6;
-$font-color3: rgb(255, 255, 255);
-$bk:rgb(10, 10, 10);
-
-@mixin flex {
-    display: flex;
-    justify-content:center;
-    align-items: center;    
-}
-@mixin img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;    
-}
+//font
+$font1: #2A9C55;
+$font2: #804624;
+$bk:rgb(20, 20, 20);
 @mixin font($color,$size){
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',
+    YuGothic,'Yu Gothic',
+    'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
     color: $color;
     font-size: $size;
     text-align: justify;
 }
-@mixin bg {
+
+//bg
+@mixin bg1 {
     background-color: #F9EDD4;
     background-image: -webkit-linear-gradient(45deg,  #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%),
                       -webkit-linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
@@ -33,4 +21,27 @@ $bk:rgb(10, 10, 10);
     background-size: 60px 60px;
     -webkit-background-size: 20px 20px;
     background-position: 0 0, 30px 30px;
+}
+@mixin bg2 {
+    background-color: rgb(249, 237, 212);
+    margin: 0 50px;
+}
+
+//img
+@mixin img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;    
+}
+@mixin img-view { 
+    width: 70%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 10px 0px rgba($font2,0.25);   
+}
+
+@mixin flex {
+    display: flex;
+    justify-content:center;
+    align-items: center;    
 }
