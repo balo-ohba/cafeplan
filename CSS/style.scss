@@ -157,6 +157,7 @@ header{
                 padding: 5% 56px;
                     @include flex;
                     justify-content: space-between;
+                    align-items: flex-start;
                     h3{
                         @include font($bk,20px);
                         padding: 0;
