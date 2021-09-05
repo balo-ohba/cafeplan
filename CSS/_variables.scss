@@ -24,7 +24,7 @@ $bk:rgb(20, 20, 20);
 }
 @mixin bg2 {
     background-color: rgb(249, 237, 212);
-    margin: 0 50px;
+    margin: 0 64px;
 }
 
 //img
@@ -34,7 +34,7 @@ $bk:rgb(20, 20, 20);
     border-radius: 5px;    
 }
 @mixin img-view { 
-    width: 70%;
+    width: 60%;
     height: auto;
     border-radius: 10px; 
     box-shadow: 1px 1px 10px 0px rgba($font2,0.25);   

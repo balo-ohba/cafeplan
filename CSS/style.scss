@@ -55,6 +55,7 @@
                         }
                         img{
                             @include img-view;
+                            width: 80%;
                         }
                         video{
                             width: 100%;
@@ -91,6 +92,16 @@
                     font-weight: bolder;
                     text-align: center;
                     padding: 5% 0;
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        width: 29px;/*画像の幅*/
+                        height: 50px;/*画像の高さ*/
+                        background-image: url(../images/red.svg);
+                        background-size: contain;
+                        vertical-align: middle;
+                        margin: 0 2%;
+                    }
                 }
                 p{
                     @include font($bk,14px);

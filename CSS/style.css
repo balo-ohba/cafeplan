@@ -27,7 +27,7 @@
 }
 #profile div {
   background-color: #f9edd4;
-  margin: 0 50px;
+  margin: 0 64px;
 }
 #profile div h2 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -79,10 +79,11 @@
   padding: 5%;
 }
 #profile div ul li ul li img {
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+  width: 80%;
 }
 #profile div ul li ul li video {
   width: 100%;
@@ -99,7 +100,7 @@
 }
 #point div {
   background-color: #f9edd4;
-  margin: 0 50px;
+  margin: 0 64px;
 }
 #point div h2 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -131,6 +132,18 @@
   text-align: center;
   padding: 5% 0;
 }
+#point div ul li h4:before {
+  content: "";
+  display: inline-block;
+  width: 29px;
+  /*画像の幅*/
+  height: 50px;
+  /*画像の高さ*/
+  background-image: url(../images/red.svg);
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0 2%;
+}
 #point div ul li p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
@@ -140,7 +153,7 @@
   text-align: justify;
 }
 #point div ul li img {
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
@@ -156,7 +169,7 @@
 }
 #nayami div {
   background-color: #f9edd4;
-  margin: 0 50px;
+  margin: 0 64px;
 }
 #nayami div h2 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
