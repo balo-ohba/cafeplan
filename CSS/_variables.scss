@@ -45,3 +45,14 @@ $bk:rgb(20, 20, 20);
     justify-content:center;
     align-items: center;    
 }
+
+@mixin pin($svg) {
+    content: "";
+    display: inline-block;
+    width: 29px;/*画像の幅*/
+    height: 50px;/*画像の高さ*/
+    background-image: $svg;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0 2%;
+}
