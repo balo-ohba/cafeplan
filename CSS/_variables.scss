@@ -1,7 +1,15 @@
 //font
 $font1: #2A9C55;
 $font2: #804624;
+$bg:#F9EDD4;
 $bk:rgb(20, 20, 20);
+$pinred:#FD8D8D;
+$pinblue:#83EDED;
+$pinpurple:#C98DFD;
+$pinyellow:#FDDF8D;
+
+
+
 @mixin font($color,$size){
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',
     YuGothic,'Yu Gothic',
@@ -23,7 +31,7 @@ $bk:rgb(20, 20, 20);
     background-position: 0 0, 30px 30px;
 }
 @mixin bg2 {
-    background-color: rgb(255, 251, 242);
+    background-color: rgb(255, 255, 255);
     margin: 0 32px;
 }
 

@@ -66,7 +66,7 @@ header nav ul li {
   line-height: 2;
 }
 #profile div {
-  background-color: #fffbf2;
+  background-color: white;
   margin: 0 32px;
 }
 #profile div h2 {
@@ -139,7 +139,7 @@ header nav ul li {
   line-height: 2;
 }
 #point div {
-  background-color: #fffbf2;
+  background-color: white;
   margin: 0 32px;
 }
 #point div h2 {
@@ -236,8 +236,9 @@ header nav ul li {
   line-height: 2;
 }
 #nayami div {
-  background-color: #fffbf2;
+  background-color: white;
   margin: 0 32px;
+  padding: 5%;
 }
 #nayami div h2 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -248,10 +249,10 @@ header nav ul li {
   padding: 2% 5%;
   text-align: center;
 }
-#nayami div ul {
+#nayami div .question {
   display: flex;
 }
-#nayami div ul li {
+#nayami div .question li {
   position: relative;
   width: 100%;
   height: 240px;
@@ -260,7 +261,7 @@ header nav ul li {
   border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
   margin: 1%;
 }
-#nayami div ul li div {
+#nayami div .question li div {
   position: absolute;
   width: 100%;
   height: 240px;
@@ -270,6 +271,62 @@ header nav ul li {
   padding-top: 100px;
   margin: 0;
 }
-#nayami div ul li div h3 {
+#nayami div .question li div h3 {
   color: #ffffff;
+}
+#nayami div .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background: rgba(249, 237, 212, 0.5);
+  border: dashed 2px #FD8D8D;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#nayami div .box::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 10%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #F9EDD4;
+  z-index: 2;
+}
+#nayami div .box::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #FD8D8D;
+  z-index: 1;
+}
+#nayami div .box .text-li {
+  width: 60%;
+}
+#nayami div .box .text-li p {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #141414;
+  font-size: 16px;
+  text-align: justify;
+}
+#nayami div .box .img-li {
+  width: 30%;
+  text-align: center;
+}
+#nayami div .box .img-li img {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+  width: 70%;
 }/*# sourceMappingURL=style.css.map */

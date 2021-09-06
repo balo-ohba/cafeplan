@@ -170,13 +170,14 @@ header{
     line-height: 2;
     div{
         @include bg2;
+        padding: 5%;
         h2{
             @include font($font1,32px);
             font-weight: bolder;
             padding: 2% 5%;
             text-align: center;
         }
-        ul{
+        .question{
             display: flex;
             li{
                 position:relative;
@@ -199,6 +200,54 @@ header{
                         color: #ffffff;
                     }
                 }        
+            }
+        }
+        .box{
+            @include flex;
+            position: relative;
+            width: 90%;
+            margin: 1.5em auto;
+            padding: 7px 10px;
+            min-width: 120px;
+            max-width: 100%;
+            font-size: 16px;
+            background: rgba($bg,50%);
+            border: dashed 2px $pinred;
+            border-radius: 10px;
+            box-sizing: border-box;                
+            &::before{
+                content: "";
+                position: absolute;
+                top: -24px;
+                left: 10%;
+                margin-left: -15px;
+                border: 12px solid transparent;
+                border-bottom: 12px solid $bg;
+                z-index: 2;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 10%;
+                margin-left: -17px;
+                border: 14px solid transparent;
+                border-bottom: 14px solid $pinred;
+                z-index: 1;
+            }
+            .text-li{
+                width: 60%;
+                p{
+                    @include font($bk,16px);
+                }                
+            }
+            .img-li{
+                width: 30%;
+                text-align: center;
+                img{
+                    @include img-view;
+                    width: 70%;
+                }
             }
         }
     }
