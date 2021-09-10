@@ -11,6 +11,10 @@ header{
     z-index: 100;
     padding: 1% 5%;
     background-color: rgba(249, 237, 212, 0.699);
+    h1{
+        font-family: $logo-font;
+        color: $font1;
+    }
     nav ul{
         display: flex;
         li{
@@ -39,6 +43,7 @@ header{
             top:40%;
             left: 10%;
             text-shadow:0 0 15px #ffffff;
+            font-family: $logo-font;
         }
         p{
             @include font($font1,40px);
@@ -47,6 +52,7 @@ header{
             top:55%;
             left: 11%;
             text-shadow:0 0 15px #ffffff;
+            font-family: $logo-font;
         }
     }
 }

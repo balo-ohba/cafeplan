@@ -12,6 +12,10 @@ header {
   padding: 1% 5%;
   background-color: rgba(249, 237, 212, 0.699);
 }
+header h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2A9C55;
+}
 header nav ul {
   display: flex;
 }
@@ -44,6 +48,7 @@ header nav ul li {
   top: 40%;
   left: 10%;
   text-shadow: 0 0 15px #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #top div p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -55,6 +60,7 @@ header nav ul li {
   top: 55%;
   left: 11%;
   text-shadow: 0 0 15px #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #profile {
