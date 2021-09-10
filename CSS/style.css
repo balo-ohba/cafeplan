@@ -25,6 +25,60 @@ header nav ul li {
   height: 678px;
   background: url("../images/img1.jpg");
   background-size: cover;
+  -webkit-animation: bgchange 20s ease infinite;
+          animation: bgchange 20s ease infinite;
+}
+@-webkit-keyframes bgchange {
+  0% {
+    background: #ffe6e1;
+  }
+  /*変化させたい色*/
+  25% {
+    background: #fdcb9e;
+  }
+  /*変化させたい色*/
+  50% {
+    background: #fdcbc1;
+  }
+  /*変化させたい色*/
+  75% {
+    background: #ffff8c;
+  }
+  /*変化させたい色*/
+  90% {
+    background: #b2dffb;
+  }
+  /*変化させたい色*/
+  100% {
+    background: #ffe6e1;
+  }
+  /*変化させたい色*/
+}
+@keyframes bgchange {
+  0% {
+    background: #ffe6e1;
+  }
+  /*変化させたい色*/
+  25% {
+    background: #fdcb9e;
+  }
+  /*変化させたい色*/
+  50% {
+    background: #fdcbc1;
+  }
+  /*変化させたい色*/
+  75% {
+    background: #ffff8c;
+  }
+  /*変化させたい色*/
+  90% {
+    background: #b2dffb;
+  }
+  /*変化させたい色*/
+  100% {
+    background: #ffe6e1;
+  }
+  /*変化させたい色*/
 }
 #top div {
   position: absolute;
@@ -88,20 +142,41 @@ header nav ul li {
   padding: 5% 56px;
 }
 #profile div ul li ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 #profile div ul li ul li {
   padding: 0;
 }
 #profile div ul li ul li.text-li {
-  width: 60%;
+  padding: 3%;
+  margin: 0 -15px;
+  mix-blend-mode: multiply;
+}
+#profile div ul li ul li.text-li.li1 {
+  background-color: #FD8D8D;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  position: absolute;
+  width: 40%;
+}
+#profile div ul li ul li.text-li.li2 {
+  background-color: #83EDED;
+  border-radius: 80% 30% 50% 50%/50%;
+  position: absolute;
+  width: 30%;
+  left: 62%;
+  top: 20%;
+}
+#profile div ul li ul li.text-li.li3 {
+  background-color: #C98DFD;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+  position: absolute;
+  width: 40%;
+  left: 66%;
+  top: 50%;
 }
 #profile div ul li ul li.img-li {
   width: 40%;
-  text-align: center;
+  margin: 0 auto;
 }
 #profile div ul li ul li h3 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -148,29 +223,47 @@ header nav ul li {
   font-size: 32px;
   text-align: justify;
   font-weight: bolder;
+  text-align: center;
   line-height: 1;
   padding: 3% 5% 0;
+  position: relative;
+}
+#point div h2:before {
+  position: absolute;
+  bottom: -15px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: "";
+  border-radius: 3px;
+  background: #2A9C55;
+}
+#point div ul li {
+  padding: 5% 0;
 }
 #point div ul li ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
 #point div ul li ul li {
   padding: 0;
 }
 #point div ul li ul li.text-li {
-  width: 60%;
+  width: 50%;
+  background-color: #F9EDD4;
+  border-radius: 20px;
+  height: 300px;
+  padding: 2%;
 }
 #point div ul li ul li.text-li h4 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
-  font-size: 16px;
+  font-size: 20px;
   text-align: justify;
   font-weight: bolder;
   text-align: center;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 #point div ul li ul li.text-li h4.p1:before {
   content: "";
@@ -211,10 +304,9 @@ header nav ul li {
 #point div ul li ul li.text-li p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
-  padding: 5% 8% 0;
-  text-align: justify;
+  padding: 2%;
 }
 #point div ul li ul li.img-li {
   width: 40%;
