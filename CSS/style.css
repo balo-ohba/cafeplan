@@ -285,7 +285,7 @@ header nav ul li {
   min-width: 120px;
   max-width: 100%;
   font-size: 16px;
-  background: rgba(249, 237, 212, 0.5);
+  background: rgba(253, 141, 141, 0.2);
   border: dashed 2px #FD8D8D;
   border-radius: 10px;
   box-sizing: border-box;
@@ -297,7 +297,7 @@ header nav ul li {
   left: 10%;
   margin-left: -15px;
   border: 12px solid transparent;
-  border-bottom: 12px solid #F9EDD4;
+  border-bottom: 12px solid #ffe8e8;
   z-index: 2;
 }
 #nayami div .box::after {
@@ -308,6 +308,72 @@ header nav ul li {
   margin-left: -17px;
   border: 14px solid transparent;
   border-bottom: 14px solid #FD8D8D;
+  z-index: 1;
+}
+#nayami div .box.box2 {
+  position: relative;
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background: rgba(131, 237, 237, 0.2);
+  border: dashed 2px #83EDED;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#nayami div .box.box2::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #e7fbfb;
+  z-index: 2;
+}
+#nayami div .box.box2::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #83EDED;
+  z-index: 1;
+}
+#nayami div .box.box3 {
+  position: relative;
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background: rgba(253, 223, 141, 0.2);
+  border: dashed 2px #FDDF8D;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#nayami div .box.box3::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 90%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #fff9e8;
+  z-index: 2;
+}
+#nayami div .box.box3::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 90%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #FDDF8D;
   z-index: 1;
 }
 #nayami div .box .text-li {
