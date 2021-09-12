@@ -394,6 +394,7 @@ html{
                     width: 60%;
                     p{
                         @include font1($bk,16px);
+                        padding: 1%;
                     }                
                 }
                 .img-li{
