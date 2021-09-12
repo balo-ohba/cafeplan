@@ -173,11 +173,17 @@ html{
             text-align: center;
             position: relative;
             li{
-                padding-top: 20%;
+                position: relative;
+                margin: 0 auto;
+                padding: 2% 0;
+                top: 28%;
+                width: 50%;                
+                background-color: $bg;
+                border-radius: 20px;   
+                z-index: 100;             
                 h3{
                     @include font2(24px);
                     text-align: center;
-                    padding: 0 5%;
                     line-height: 2.5;
                 }
                 p{
@@ -185,15 +191,15 @@ html{
                 }
             }
             img{
-                &.c1{ 
-                    @include catch(1%,1%)
-                }
-                &.c2{
-                    @include catch(27%,5%) 
-                }
-                &.c3{
-                    @include catch(15%,70%)
-                }
+                &.c1{@include catch(1%,1%)}
+                &.c2{@include catch(27%,3%) }
+                &.c3{@include catch(7%,73%)}
+                &.c4{@include catch(3%,30%)}
+                &.c5{@include catch(10%,50%)}
+                &.c6{@include catch(60%,10%)}
+                &.c7{@include catch(60%,30%)}
+                &.c8{@include catch(40%,70%)}
+                &.c9{@include catch(65%,50%)}
             }
         }
         ul{

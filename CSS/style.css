@@ -225,7 +225,14 @@ html {
   position: relative;
 }
 #profile div .catch li {
-  padding-top: 20%;
+  position: relative;
+  margin: 0 auto;
+  padding: 2% 0;
+  top: 28%;
+  width: 50%;
+  background-color: #F9EDD4;
+  border-radius: 20px;
+  z-index: 100;
 }
 #profile div .catch li h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -233,7 +240,6 @@ html {
   font-size: 24px;
   font-weight: bolder;
   text-align: center;
-  padding: 0 5%;
   line-height: 2.5;
 }
 #profile div .catch li p {
@@ -251,15 +257,63 @@ html {
   width: 25%;
   position: absolute;
   top: 27%;
-  left: 5%;
+  left: 3%;
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
 #profile div .catch img.c3 {
   width: 25%;
   position: absolute;
-  top: 15%;
+  top: 7%;
+  left: 73%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c4 {
+  width: 25%;
+  position: absolute;
+  top: 3%;
+  left: 30%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c5 {
+  width: 25%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c6 {
+  width: 25%;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c7 {
+  width: 25%;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c8 {
+  width: 25%;
+  position: absolute;
+  top: 40%;
   left: 70%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c9 {
+  width: 25%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
