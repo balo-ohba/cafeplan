@@ -97,3 +97,12 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         z-index: 1;
     }
 }
+
+@mixin catch($top,$left) {
+    width: 25%;
+    position:absolute;
+    top:$top;
+    left:$left;
+    border: solid 5px #fff;
+    box-shadow: 1px 1px 10px 0px rgba($font2,0.25); 
+}

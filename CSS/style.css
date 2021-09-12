@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+#header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,24 +11,169 @@ header {
   z-index: 100;
   padding: 1% 5%;
   background-color: rgba(249, 237, 212, 0.699);
+  /*メニューボタンをクリックした際に付与されるpanelactiveクラスがついたら*/
 }
-header h1 {
+#header h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #2A9C55;
 }
-header nav ul {
+#header nav ul {
   display: flex;
 }
-header nav ul li {
+#header nav ul li {
   margin: 0 16px;
+}
+#header.dnone {
+  opacity: 0;
+  /*透過0にして非表示に*/
+}
+#header.panelactive {
+  opacity: 1;
+  /*不透明にして出現*/
+}
+
+.openbtn {
+  /*はじめは非表示に*/
+  display: none;
+  /*ボタンの位置*/
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  z-index: 999;
+  /*ボタンの形状*/
+  background: #f9edd4;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.openbtn span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 45%;
+}
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+}
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+}
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+}
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+.openbtn.fadeDown {
+  -webkit-animation-name: fadeDownAnime;
+          animation-name: fadeDownAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  display: block;
+}
+@-webkit-keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #top {
-  position: relative;
   width: 100%;
   height: 678px;
-  background: url("../images/img1.jpg");
-  background-size: cover;
+}
+#top .slider_fade {
+  position: relative;
+}
+#top .slider_fade img {
+  width: 100%;
+  height: 678px;
+  max-height: 678px;
+}
+#top .slider_fade > li {
+  position: absolute;
+  list-style: none;
+  visibility: hidden;
+  -webkit-animation: anime_slider_fade 12s 0s infinite;
+          animation: anime_slider_fade 12s 0s infinite;
+}
+#top .slider_fade > li:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+#top .slider_fade > li:nth-of-type(3) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+@-webkit-keyframes anime_slider_fade {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  48.3% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anime_slider_fade {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  48.3% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 #top div {
   position: absolute;
@@ -75,20 +220,50 @@ header nav ul li {
   background-color: white;
   margin: 0 32px;
 }
-#profile div h2 {
-  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
-  color: #2A9C55;
-  font-size: 32px;
-  text-align: justify;
-  font-weight: bolder;
-  padding: 2% 5% 0;
+#profile div .catch {
+  height: 678px;
+  text-align: center;
+  position: relative;
 }
-#profile div h3 {
+#profile div .catch li {
+  padding-top: 20%;
+}
+#profile div .catch li h3 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #2A9C55;
   font-size: 24px;
   text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
   padding: 0 5%;
+  line-height: 2.5;
+}
+#profile div .catch li p {
+  line-height: 2.5;
+}
+#profile div .catch img.c1 {
+  width: 25%;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c2 {
+  width: 25%;
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+#profile div .catch img.c3 {
+  width: 25%;
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  border: solid 5px #fff;
+  box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
 #profile div ul li {
   padding: 5% 56px;
@@ -98,6 +273,21 @@ header nav ul li {
 }
 #profile div ul li ul li {
   padding: 0;
+}
+#profile div ul li ul li h3 {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #141414;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: bolder;
+  padding: 0 5%;
+}
+#profile div ul li ul li p {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #141414;
+  font-size: 16px;
+  text-align: justify;
+  padding: 5%;
 }
 #profile div ul li ul li.text-li {
   padding: 3%;
@@ -137,22 +327,11 @@ header nav ul li {
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
   width: 78%;
 }
-#profile div ul li ul li h3 {
-  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
-  color: #141414;
-  font-size: 20px;
-  text-align: justify;
-  font-weight: bolder;
-  padding: 0 5%;
+#profile div ul li ul li.video-li {
+  width: 70%;
+  margin: 0 auto;
 }
-#profile div ul li ul li p {
-  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
-  color: #141414;
-  font-size: 16px;
-  text-align: justify;
-  padding: 5%;
-}
-#profile div ul li ul li video {
+#profile div ul li ul li.video-li video {
   width: 100%;
   height: auto;
 }
@@ -439,4 +618,44 @@ header nav ul li {
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
   width: 70%;
+}
+
+#in {
+  background-color: #F9EDD4;
+  background-image: linear-gradient(45deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%), linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
+  background-size: 60px 60px;
+  -webkit-background-size: 20px 20px;
+  background-position: 0 0, 30px 30px;
+  line-height: 2;
+}
+#in div {
+  background-color: white;
+  margin: 0 32px;
+  height: 200px;
+}
+#in div h2 {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #2A9C55;
+  font-size: 32px;
+  text-align: justify;
+  font-weight: bolder;
+  text-align: center;
+  padding: 2% 5% 0;
+}
+#in div div {
+  width: 30%;
+  background-color: #fff;
+  color: #804624;
+  border: solid 1px #804624;
+  text-align: center;
+  border-radius: 20px;
+  margin: 3% auto;
+  height: auto;
+}
+#in div div:hover {
+  background-color: #804624;
+  color: #fff;
+}
+#in div div a {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

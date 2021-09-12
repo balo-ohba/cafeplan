@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
 		<h1><a href="index.html">Café Plan</a></h1>
 		<nav>
 			<ul>
@@ -24,8 +24,20 @@
 		</nav>
     </header>
 
+	<div class="openbtn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
  <main>
     <section id="top">
+		<ul class="slider_fade">
+			<li><img src="images/bg1.jpg"></li>
+			<li><img src="images/bg2.jpg"></li>
+			<li><img src="images/bg3.jpg"></li>
+		</ul>
+
 		<div>
 			<h2>Café Plan</h2>
 			<p>Caféをplanする</p>
@@ -34,14 +46,19 @@
 
 	<section id="profile">
 		<div>
-			<h2>あなたのカフェライフをPlanしよう！</h2>
-			<h3>Plan（計画）×Plan（地図）　地図と写真で彩りあるカフェライフを。</h3>
+			<ul class="catch">
+				<li>
+					<h3>Plan（計画）×　Plan（地図）</h3>
+					<p>地図と写真で彩りあるカフェライフを。</p>
+					<p>「Café Plan」は写真と地図を使って、<br>あなたのカフェライフをPlan（設計）します。</p>					
+				</li>
+				<img class="c1" src="images/bg1.jpg">
+				<img class="c2" src="images/bg2.jpg">
+				<img class="c3" src="images/bg3.jpg">
+			</ul>
 			<ul>
 				<li>
 					<ul>
-						<li class="text-li li1">   
-							<h3>Cafe Planは写真と地図を使って、あなたのカフェライフをPlan（設計）します。</h3>
-						</li>
 						<li class="img-li">
 							<img src="images/view1.png">
 						</li>
@@ -58,13 +75,13 @@
 				</li>
 				<li>
 					<ul>
-						<li class="img-li">
+						<li class="video-li">
 							<video src="images/mv.mp4" poster="images/logos.jpg" controls preload="none"></video>
 						</li>
 						<li class="text-li">   
 							<h3>あなたにピッタリのカフェを探すことが出来ます。</h3>
-							<p>全国のカフェを様々な条件から検索することが出来ます。
-								他のユーザーのおすすめや現在地からでも、あなたにピッタリのカフェを見つけることが出来ます。</p>
+							<p>全国のカフェを様々な条件から検索することが出来ます。</p>
+							<p>他のユーザーのおすすめや現在地からでも、あなたにピッタリのカフェを見つけることが出来ます。</p>
 						</li>
 					</ul>
 				</li>
@@ -167,9 +184,17 @@
 	</section>
 
 	<section id="in">
-		<a href="">カフェプランを始める</a>
+		<div>
+			<h2>あなたのカフェライフをPlanしよう！</h2>
+			<div><a href="https://xd.adobe.com/view/7ae8e140-f616-4293-b9f1-2701462f508f-2fbb/">
+				Café Plan β版 を始める</a></div>
+		</div>
 	</section>
 
  </main>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!--自作のJS-->
+	<script src="CSS/cp.js"></script>
 </body>
 </html>
