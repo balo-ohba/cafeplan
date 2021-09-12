@@ -100,9 +100,8 @@ html{
     .slider_fade{
         position: relative;
         img{
-            width: 100%;
+            width: 100vw;
             height: 678px;
-            max-height: 678px;
         }
     }
     .slider_fade > li {
@@ -116,8 +115,7 @@ html{
     }
     .slider_fade > li:nth-of-type(3) {
         animation-delay: 8s;
-    }
-     
+    }  
     @keyframes anime_slider_fade {
         0% {
             visibility: visible;
@@ -395,7 +393,7 @@ html{
 
 #in{
     position:relative;
-    background-image: url('../images/bg1.jpg');
+    background-image: url('../images/img1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -439,7 +437,7 @@ html{
     @include bg1;
     ul{
         position:relative;
-        background-image: url('../images/bg1.jpg');
+        background-image: url('../images/img1.jpg');
         background-attachment: fixed;
         background-position: center;
         background-size: cover;

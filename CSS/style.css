@@ -120,9 +120,8 @@ html {
   position: relative;
 }
 #top .slider_fade img {
-  width: 100%;
+  width: 100vw;
   height: 678px;
-  max-height: 678px;
 }
 #top .slider_fade > li {
   position: absolute;
@@ -478,7 +477,7 @@ html {
   position: absolute;
   top: 0;
   /*線の形状*/
-  width: 2px;
+  width: 3px;
   height: 30px;
   background: #2A9C55;
   /*線の動き1.4秒かけて動く。永遠にループ*/
@@ -691,7 +690,7 @@ html {
 
 #in {
   position: relative;
-  background-image: url("../images/bg1.jpg");
+  background-image: url("../images/img1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -743,7 +742,7 @@ html {
 }
 .point-title ul, .nayami-title ul {
   position: relative;
-  background-image: url("../images/bg1.jpg");
+  background-image: url("../images/img1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
