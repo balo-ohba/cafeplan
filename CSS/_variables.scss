@@ -1,21 +1,31 @@
-//font
+//color
 $font1: #2A9C55;
 $font2: #804624;
 $bg:#F9EDD4;
 $bk:rgb(20, 20, 20);
-$pinred:#FD8D8D;
+//pin-color
+$pingreen:#8CE880;
 $pinblue:#83EDED;
 $pinpurple:#C98DFD;
+$pinred:#FD8D8D;
 $pinyellow:#FDDF8D;
-$logo-font: Georgia, 'Times New Roman', Times, serif;
 
-@mixin font($color,$size){
+//font
+$logo-font: Georgia, 'Times New Roman', Times, serif;
+//font-family: $logo-font;
+@mixin font1($color,$size){
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',
     YuGothic,'Yu Gothic',
     'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
     color: $color;
     font-size: $size;
     text-align: justify;
+}
+@mixin font2($size){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $font1;
+    font-size: $size;
+    font-weight: bolder;
 }
 
 //bg
@@ -46,13 +56,6 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px; 
     box-shadow: 1px 1px 10px 0px rgba($font2,0.25);   
 }
-
-@mixin flex {
-    display: flex;
-    justify-content:center;
-    align-items: center;    
-}
-
 @mixin pin($svg) {
     content: "";
     display: inline-block;
@@ -62,6 +65,31 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     background-size: contain;
     vertical-align: middle;
     margin: 0 2%;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content:center;
+    align-items: center;    
+}
+
+@mixin catch($top,$left) {
+    width: 25%;
+    position:absolute;
+    top:$top;
+    left:$left;
+    border: solid 5px #fff;
+    box-shadow: 1px 1px 10px 0px rgba($font2,0.25); 
+}
+
+@mixin profile-li($color,$radius,$top,$left) {
+    background-color: $color;
+    border-radius: $radius; 
+    box-shadow: 0px 0px 3px 2px $color;
+    position: absolute;
+    width: 35%;      
+    top: $top;   
+    left: $left;  
 }
 
 @mixin box($color1,$color2,$left) { 
@@ -96,13 +124,4 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         border-bottom: 14px solid $color1;
         z-index: 1;
     }
-}
-
-@mixin catch($top,$left) {
-    width: 25%;
-    position:absolute;
-    top:$top;
-    left:$left;
-    border: solid 5px #fff;
-    box-shadow: 1px 1px 10px 0px rgba($font2,0.25); 
 }
