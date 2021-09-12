@@ -563,6 +563,67 @@ html {
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
+#point div ul li ul li.img-li.slider {
+  position: relative;
+  height: 100vh;
+  /*ドットナビゲーションの設定*/
+}
+#point div ul li ul li.img-li.slider .si {
+  width: 60%;
+  height: auto;
+}
+#point div ul li ul li.img-li.slider .slick-prev, #point div ul li ul li.img-li.slider .slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #7c2626;
+  /*矢印の色*/
+  border-right: 2px solid #8b1f1f;
+  /*矢印の色*/
+  height: 25px;
+  width: 25px;
+}
+#point div ul li ul li.img-li.slider .slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: 2.5%;
+  transform: rotate(-135deg);
+}
+#point div ul li ul li.img-li.slider .slick-next {
+  /*次へ矢印の位置と形状*/
+  right: 2.5%;
+  transform: rotate(45deg);
+}
+#point div ul li ul li.img-li.slider .slick-dots {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin: -50px 0 0 0;
+}
+#point div ul li ul li.img-li.slider .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+#point div ul li ul li.img-li.slider .slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+#point div ul li ul li.img-li.slider .slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
 #point div ul li ul.scrolldown {
   position: absolute;
   left: 50%;
