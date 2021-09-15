@@ -220,12 +220,13 @@ html {
   background-color: white;
   margin: 0 32px;
 }
-#profile div .catch {
+#profile div .profile-ul1 {
   height: 678px;
   text-align: center;
   position: relative;
+  background: radial-gradient(#ffffff 70%, #ffebbe);
 }
-#profile div .catch li {
+#profile div .profile-ul1 li {
   position: relative;
   margin: 0 auto;
   padding: 2% 0;
@@ -237,7 +238,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch li h3 {
+#profile div .profile-ul1 li h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #2A9C55;
   font-size: 24px;
@@ -245,10 +246,10 @@ html {
   text-align: center;
   line-height: 2.5;
 }
-#profile div .catch li p {
+#profile div .profile-ul1 li p {
   line-height: 2.5;
 }
-#profile div .catch img.c1 {
+#profile div .profile-ul1 img.c1 {
   width: 25%;
   position: absolute;
   top: 1%;
@@ -256,7 +257,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c2 {
+#profile div .profile-ul1 img.c2 {
   width: 25%;
   position: absolute;
   top: 27%;
@@ -264,7 +265,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c3 {
+#profile div .profile-ul1 img.c3 {
   width: 25%;
   position: absolute;
   top: 7%;
@@ -272,7 +273,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c4 {
+#profile div .profile-ul1 img.c4 {
   width: 25%;
   position: absolute;
   top: 3%;
@@ -280,7 +281,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c5 {
+#profile div .profile-ul1 img.c5 {
   width: 25%;
   position: absolute;
   top: 10%;
@@ -288,7 +289,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c6 {
+#profile div .profile-ul1 img.c6 {
   width: 25%;
   position: absolute;
   top: 50%;
@@ -296,7 +297,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c7 {
+#profile div .profile-ul1 img.c7 {
   width: 25%;
   position: absolute;
   top: 60%;
@@ -304,7 +305,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c8 {
+#profile div .profile-ul1 img.c8 {
   width: 25%;
   position: absolute;
   top: 40%;
@@ -312,7 +313,7 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div .catch img.c9 {
+#profile div .profile-ul1 img.c9 {
   width: 25%;
   position: absolute;
   top: 64%;
@@ -320,21 +321,24 @@ html {
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#profile div ul li {
+#profile div .profile-ul2 {
+  background: radial-gradient(#ffffff 70%, #ffebbe);
+}
+#profile div .profile-ul2 li {
   padding: 5% 32px;
 }
-#profile div ul li ul {
+#profile div .profile-ul2 li ul {
   position: relative;
 }
-#profile div ul li ul li {
+#profile div .profile-ul2 li ul li {
   padding: 0;
 }
-#profile div ul li ul li.text-li {
+#profile div .profile-ul2 li ul li.text-li {
   padding: 3%;
   margin: 0 -15px;
   mix-blend-mode: multiply;
 }
-#profile div ul li ul li.text-li.li1 {
+#profile div .profile-ul2 li ul li.text-li.li1 {
   background-color: #8CE880;
   border-radius: 80% 30% 50% 50%/50%;
   box-shadow: 0px 0px 20px 20px #8CE880;
@@ -343,7 +347,7 @@ html {
   top: 0;
   left: 0;
 }
-#profile div ul li ul li.text-li.li2 {
+#profile div .profile-ul2 li ul li.text-li.li2 {
   background-color: #83EDED;
   border-radius: 80% 30% 50% 50%/50%;
   box-shadow: 0px 0px 20px 20px #83EDED;
@@ -353,7 +357,7 @@ html {
   left: 65%;
   width: 33%;
 }
-#profile div ul li ul li.text-li.li3 {
+#profile div .profile-ul2 li ul li.text-li.li3 {
   background-color: #C98DFD;
   border-radius: 80% 50%/50%;
   box-shadow: 0px 0px 20px 20px #C98DFD;
@@ -362,7 +366,7 @@ html {
   top: 42%;
   left: 5%;
 }
-#profile div ul li ul li.text-li.li4 {
+#profile div .profile-ul2 li ul li.text-li.li4 {
   background-color: #FD8D8D;
   border-radius: 80% 30% 50% 50%/50%;
   box-shadow: 0px 0px 20px 20px #FD8D8D;
@@ -371,7 +375,7 @@ html {
   top: 60%;
   left: 68%;
 }
-#profile div ul li ul li.text-li.li5 {
+#profile div .profile-ul2 li ul li.text-li.li5 {
   background-color: #FDDF8D;
   border-radius: 50% 50%/50%;
   box-shadow: 0px 0px 20px 20px #FDDF8D;
@@ -380,35 +384,35 @@ html {
   top: 80%;
   left: 2%;
 }
-#profile div ul li ul li.text-li p {
+#profile div .profile-ul2 li ul li.text-li p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
   font-size: 16px;
   text-align: justify;
   padding: 5%;
 }
-#profile div ul li ul li.img-li {
+#profile div .profile-ul2 li ul li.img-li {
   width: 40%;
   margin: 1% auto;
   text-align: center;
 }
-#profile div ul li ul li.img-li img {
+#profile div .profile-ul2 li ul li.img-li img {
   width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
   width: 78%;
 }
-#profile div ul li ul li.video-li {
+#profile div .profile-ul2 li ul li.video-li {
   width: 70%;
   margin: 0 auto;
 }
-#profile div ul li ul li.video-li video {
+#profile div .profile-ul2 li ul li.video-li video {
   width: 100%;
   height: auto;
   border-radius: 20px;
 }
-#profile div ul li ul li.video-text h3 {
+#profile div .profile-ul2 li ul li.video-text h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #2A9C55;
   font-size: 20px;
@@ -416,7 +420,7 @@ html {
   padding: 2% 0;
   text-align: center;
 }
-#profile div ul li ul li.video-text p {
+#profile div .profile-ul2 li ul li.video-text p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
   font-size: 16px;
@@ -482,26 +486,29 @@ html {
   background-color: white;
   margin: 0 32px;
 }
-#point div ul li {
+#point div .point-ul {
+  background: radial-gradient(#ffffff 65%, #ffebbe);
+}
+#point div .point-ul li {
   padding: 5% 0;
   position: relative;
 }
-#point div ul li ul {
+#point div .point-ul li ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#point div ul li ul li {
+#point div .point-ul li ul li {
   padding: 0;
 }
-#point div ul li ul li.text-li {
+#point div .point-ul li ul li.text-li {
   width: 45%;
   background-color: #fcf6e9;
   border-radius: 20px;
   height: 300px;
   padding: 2%;
 }
-#point div ul li ul li.text-li h4 {
+#point div .point-ul li ul li.text-li h4 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
   font-size: 20px;
@@ -510,7 +517,7 @@ html {
   text-align: center;
   padding: 3% 0;
 }
-#point div ul li ul li.text-li h4.p1:before {
+#point div .point-ul li ul li.text-li h4.p1:before {
   content: "";
   display: inline-block;
   width: 29px;
@@ -522,7 +529,7 @@ html {
   vertical-align: middle;
   margin: 0 2%;
 }
-#point div ul li ul li.text-li h4.p2:before {
+#point div .point-ul li ul li.text-li h4.p2:before {
   content: "";
   display: inline-block;
   width: 29px;
@@ -534,7 +541,7 @@ html {
   vertical-align: middle;
   margin: 0 2%;
 }
-#point div ul li ul li.text-li h4.p3:before {
+#point div .point-ul li ul li.text-li h4.p3:before {
   content: "";
   display: inline-block;
   width: 29px;
@@ -546,36 +553,36 @@ html {
   vertical-align: middle;
   margin: 0 2%;
 }
-#point div ul li ul li.text-li p {
+#point div .point-ul li ul li.text-li p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #141414;
   font-size: 16px;
   text-align: justify;
   padding: 2%;
 }
-#point div ul li ul li.img-li {
+#point div .point-ul li ul li.img-li {
   width: 45%;
   text-align: center;
 }
-#point div ul li ul li.img-li img {
+#point div .point-ul li ul li.img-li img {
   width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }
-#point div ul li ul.scrolldown {
+#point div .point-ul li ul.scrolldown {
   position: absolute;
   left: 50%;
   bottom: 10px;
   /*全体の高さ*/
   height: 50px;
 }
-#point div ul li ul.scrolldown span {
+#point div .point-ul li ul.scrolldown span {
   position: absolute;
   left: -15px;
   top: -15px;
 }
-#point div ul li ul.scrolldown::after {
+#point div .point-ul li ul.scrolldown::after {
   content: "";
   /*描画位置*/
   position: absolute;
@@ -678,6 +685,7 @@ html {
 #nayami div {
   background-color: white;
   margin: 0 32px;
+  background: radial-gradient(#ffffff 85%, #ffebbe);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

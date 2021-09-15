@@ -169,10 +169,11 @@ html{
     line-height: 2;
     div{
         @include bg2;
-        .catch{
+        .profile-ul1{
             height: 678px;
             text-align: center;
             position: relative;
+            background: radial-gradient(#ffffff 70%,#ffebbe);
             li{
                 position: relative;
                 margin: 0 auto;
@@ -205,7 +206,8 @@ html{
                 &.c9{@include catch(64%,48%)}
             }
         }
-        ul{
+        .profile-ul2{
+            background: radial-gradient(#ffffff 70%,#ffebbe);
             li{
                 padding: 5% 32px;
                 ul{
@@ -282,7 +284,8 @@ html{
     line-height: 2;
     div{
         @include bg2;
-        ul{
+        .point-ul{
+            background: radial-gradient(#ffffff 65%,#ffebbe);
             li{
                 padding: 5% 0;
                 position: relative;
@@ -347,6 +350,7 @@ html{
     line-height: 2;
     div{
         @include bg2;
+        background: radial-gradient(#ffffff 85%,#ffebbe);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
