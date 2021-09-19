@@ -50,7 +50,7 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     width: 60%;
     height: auto;
     border-radius: 10px; 
-    box-shadow: 1px 1px 10px 0px rgba($font2,0.25);   
+    box-shadow: 1px 1px 20px 5px rgba($font2,0.25);   
 }
 @mixin pin($svg) {
     content: "";
@@ -166,16 +166,18 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     left: $left;  
 }
 //#point
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
 @mixin eg-title($eg) {
     &::before{
         content: $eg;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Sacramento', cursive;        
         color: $font1;
-        font-size: 32px;
+        font-size: 48px;
         font-weight: bolder;       
         position: absolute;
         top: -20%;  
-        transform: rotate( -10deg );
+        left: -5%;
+        transform: rotate( -5deg );
     }
 }
 @mixin imgbox {
