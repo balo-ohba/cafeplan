@@ -471,3 +471,11 @@ html{
         }
     }  
 }
+
+.app{
+    @include bg1;
+    div{
+        @include bg2;
+        text-align: center;
+    }
+}
