@@ -1014,7 +1014,7 @@ html {
   display: flex;
 }
 #nayami div input:checked + .tab_item div {
-  background: rgba(0, 0, 0, 0.24);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 #in {
