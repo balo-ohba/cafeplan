@@ -1030,12 +1030,12 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 678px;
+  height: 638px;
 }
 #in div {
   position: absolute;
   width: 100%;
-  height: 678px;
+  height: 638px;
   background: rgba(0, 0, 0, 0.25);
   margin: 0;
 }
@@ -1069,6 +1069,24 @@ html {
   font-weight: bolder;
 }
 
+#footer {
+  width: 100%;
+  padding: 1%;
+  background-color: rgba(249, 237, 212, 0.699);
+}
+#footer div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+#footer div p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2A9C55;
+}
+#footer div p a:hover {
+  color: #141414;
+}
+
 .app {
   background-color: #F9EDD4;
   background-image: linear-gradient(45deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%), linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
@@ -1080,4 +1098,85 @@ html {
   background-color: white;
   margin: 0 32px;
   text-align: center;
+}
+
+.kyaha {
+  background-color: #F9EDD4;
+  background-image: linear-gradient(45deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%), linear-gradient(-135deg, #fff 25%, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 75%);
+  background-size: 60px 60px;
+  -webkit-background-size: 20px 20px;
+  background-position: 0 0, 30px 30px;
+  line-height: 2;
+}
+.kyaha div {
+  background-color: white;
+  margin: 0 32px;
+  background: radial-gradient(#ffffff 75%, #ffebbe);
+}
+.kyaha div .profile {
+  padding: 1% 5%;
+}
+.kyaha div .profile h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2A9C55;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.kyaha div .profile p {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #141414;
+  font-size: 16px;
+  text-align: justify;
+}
+.kyaha div .mem li {
+  padding: 1% 0;
+}
+.kyaha div .mem li ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.kyaha div .mem li ul li {
+  padding: 0;
+}
+.kyaha div .mem li ul li.text-li {
+  width: 50%;
+  padding: 2%;
+  min-width: 120px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.kyaha div .mem li ul li.text-li.li1 {
+  background: rgba(253, 141, 141, 0.2);
+  border: dashed 2px #FD8D8D;
+}
+.kyaha div .mem li ul li.text-li.li2 {
+  background: rgba(131, 237, 237, 0.2);
+  border: dashed 2px #83EDED;
+}
+.kyaha div .mem li ul li.text-li.li3 {
+  background: rgba(140, 232, 128, 0.2);
+  border: dashed 2px #8CE880;
+}
+.kyaha div .mem li ul li.text-li h2 {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #2A9C55;
+  font-size: 16px;
+  text-align: justify;
+}
+.kyaha div .mem li ul li.text-li p {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #141414;
+  font-size: 14px;
+  text-align: justify;
+}
+.kyaha div .mem li ul li.img-li {
+  width: 20%;
+}
+.kyaha div .mem li ul li.img-li img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
