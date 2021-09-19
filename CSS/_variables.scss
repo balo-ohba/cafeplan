@@ -50,7 +50,7 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     width: 60%;
     height: auto;
     border-radius: 10px; 
-    box-shadow: 1px 1px 20px 5px rgba($font2,0.25);   
+    box-shadow: 1px 1px 15px 5px rgba($font2,0.25);   
 }
 @mixin pin($svg) {
     content: "";
@@ -179,39 +179,6 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         left: -5%;
         transform: rotate( -5deg );
     }
-}
-@mixin imgbox {
-    height: 380px;
-    overflow: hidden;
-    position: relative; 
-    .main_img {
-    z-index:10;
-    opacity: 0;
-    width: 50%;
-    height: 380px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-animation: anime 36s 0s infinite;
-    animation: anime 36s 0s infinite; } 
-    .main_img:nth-of-type(2) {
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s; }
-    
-    .main_img:nth-of-type(3) {
-    -webkit-animation-delay: 12s;
-    animation-delay: 12s; }
-
-@keyframes anime {
-    0% {opacity: 0;}
-    8% {opacity: 1;}
-    17% {opacity: 1;}
-    25% {opacity: 0; z-index:9;}
-    100% { opacity: 0 }
-    } 
 }
 //#nayami
 @mixin question($img) {

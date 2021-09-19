@@ -284,7 +284,7 @@ html{
                     @include flex;
                     li{
                         padding: 0;
-                        &.text-li{//
+                        &.text-li{
                             width: 45%;
                             background-color: #fcf6e9;
                             border-radius: 20px;
@@ -303,17 +303,70 @@ html{
                                 @include font1($bk,16px);
                                 padding: 2%;
                             }
-                            &.li1{@include eg-title("Find it")}
-                            &.li2{@include eg-title("Mapping")}
-                            &.li3{@include eg-title("Keep remember")}
+                            &.li1{@include eg-title("Find it");}
+                            &.li2{@include eg-title("Mapping");}
+                            &.li3{@include eg-title("Keep remember");}
                         } 
-                        &.img-li{
+                        &.main_imgBox{
                             width: 45%;
+                            height: 600px;
                             text-align: center;
-                            img{
-                                @include img-view;
-                            }                            
-                        }  
+                            overflow: hidden;
+                            position: relative;
+                            .main_img{
+                                margin: 0;
+                                width: 100%;
+                                height: auto;
+                                z-index:10;
+                                opacity: 0;
+                                background: none;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                -webkit-animation: anime 36s 0s infinite;
+                                animation: anime 36s 0s infinite; 
+                                img{
+                                    @include img-view;
+                                    margin: 3%;
+                                }
+                            }   
+                            .main_img:nth-of-type(2) {
+                                -webkit-animation-delay: 6s;
+                                animation-delay: 6s; }
+                          
+                              .main_img:nth-of-type(3) {
+                                -webkit-animation-delay: 12s;
+                                animation-delay: 12s; }
+                          
+                              .main_img:nth-of-type(4) {
+                                -webkit-animation-delay: 18s;
+                                animation-delay: 18s; }
+                          
+                              .main_img:nth-of-type(5) {
+                                -webkit-animation-delay: 24s;
+                                animation-delay: 24s; }
+                          
+                              .main_img:nth-of-type(6) {
+                                -webkit-animation-delay: 30s;
+                                animation-delay: 30s; 
+                            }    
+                            @keyframes anime {
+                                0% {
+                                      opacity: 0;
+                                  }
+                                  8% {
+                                      opacity: 1;
+                                  }
+                                  17% {
+                                      opacity: 1;
+                                  }
+                                  25% {
+                                      opacity: 0;
+                                       z-index:9;
+                                  }
+                                  100% { opacity: 0 }
+                              }                                                                                 
+                        } 
                     }
                     &.scrolldown{
                         @include scrolldown;
