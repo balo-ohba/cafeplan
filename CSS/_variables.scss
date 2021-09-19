@@ -9,10 +9,8 @@ $pinblue:#83EDED;
 $pinpurple:#C98DFD;
 $pinred:#FD8D8D;
 $pinyellow:#FDDF8D;
-
 //font
 $logo-font: Georgia, 'Times New Roman', Times, serif;
-//font-family: $logo-font;
 @mixin font1($color,$size){
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',
     YuGothic,'Yu Gothic',
@@ -27,7 +25,6 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     font-size: $size;
     font-weight: bolder;
 }
-
 //bg
 @mixin bg1 {
     background-color: #F9EDD4;
@@ -43,7 +40,6 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(255, 255, 255);
     margin: 0 32px;
 }
-
 //img
 @mixin img {
     width: 100%;
@@ -66,13 +62,12 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     vertical-align: middle;
     margin: 0 2%;
 }
-
+//others
 @mixin flex {
     display: flex;
     justify-content:center;
     align-items: center;    
 }
-
 @mixin scrolldown {
     position:absolute;
     left:50%;
@@ -114,83 +109,6 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         }
     }     
 }
-
-@mixin catch($top,$left) {
-    width: 25%;
-    position:absolute;
-    top:$top;
-    left:$left;
-    border: solid 5px #fff;
-    box-shadow: 1px 1px 10px 0px rgba($font2,0.25); 
-}
-
-@mixin profile-li($color,$radius,$top,$left) {
-    background-color: $color;
-    border-radius: $radius; 
-    box-shadow: 0px 0px 20px 20px $color;
-    position: absolute;
-    width: 35%;      
-    top: $top;   
-    left: $left;  
-}
-
-@mixin question($img) {
-    position:relative;
-    width: 30%;
-    height: 240px;
-    background: url($img);
-    background-size: cover;
-    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%; 
-    margin: 1%;
-    li{
-        position: absolute;
-        width: 100%;
-        height: 240px;
-        background: rgba(0, 0, 0, 0.7);
-        text-align: center;
-        border-radius: 50% 50% 50% 70%/50% 50% 70% 60%; 
-        padding-top:100px;
-        margin: 0;
-        h3{
-            color: #ffffff;
-        }
-    }     
-}
-
-@mixin box($color1,$color2,$left) { 
-    position: relative;
-    width: 90%;
-    margin: 1.5em auto;
-    padding: 7px 10px;
-    min-width: 120px;
-    max-width: 100%;
-    font-size: 16px;
-    background: rgba($color1, 0.2);
-    border: dashed 2px $color1;
-    border-radius: 10px;
-    box-sizing: border-box;   
-    &::before{
-        content: "";
-        position: absolute;
-        top: -24px;
-        left: $left;
-        margin-left: -15px;
-        border: 12px solid transparent;
-        border-bottom: 12px solid $color2;
-        z-index: 2;
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        top: -30px;
-        left: $left;
-        margin-left: -17px;
-        border: 14px solid transparent;
-        border-bottom: 14px solid $color1;
-        z-index: 1;
-    }
-}
-
 @mixin parallax($img) {
     @include bg1;
     ul{
@@ -228,4 +146,127 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         }
     }
     
+}
+//#profile
+@mixin catch($top,$left) {
+    width: 25%;
+    position:absolute;
+    top:$top;
+    left:$left;
+    border: solid 5px #fff;
+    box-shadow: 1px 1px 10px 0px rgba($font2,0.25); 
+}
+@mixin profile-li($color,$radius,$top,$left) {
+    background-color: $color;
+    border-radius: $radius; 
+    box-shadow: 0px 0px 20px 20px $color;
+    position: absolute;
+    width: 35%;      
+    top: $top;   
+    left: $left;  
+}
+//#point
+@mixin eg-title($eg) {
+    &::before{
+        content: $eg;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: $font1;
+        font-size: 32px;
+        font-weight: bolder;       
+        position: absolute;
+        top: -20%;  
+        transform: rotate( -10deg );
+    }
+}
+@mixin imgbox {
+    height: 380px;
+    overflow: hidden;
+    position: relative; 
+    .main_img {
+    z-index:10;
+    opacity: 0;
+    width: 50%;
+    height: 380px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 36s 0s infinite;
+    animation: anime 36s 0s infinite; } 
+    .main_img:nth-of-type(2) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s; }
+    
+    .main_img:nth-of-type(3) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s; }
+
+@keyframes anime {
+    0% {opacity: 0;}
+    8% {opacity: 1;}
+    17% {opacity: 1;}
+    25% {opacity: 0; z-index:9;}
+    100% { opacity: 0 }
+    } 
+}
+//#nayami
+@mixin question($img) {
+    position:relative;
+    width: 30%;
+    height: 240px;
+    background: url($img);
+    background-size: cover;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%; 
+    margin: 1%;
+    div{
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        border-radius: 50% 50% 50% 70%/50% 50% 70% 60%; 
+        padding-top:100px;
+        margin: 0;
+        h3{
+            color: #ffffff;
+        }
+    }  
+    &:hover{
+        div{background: rgba(0, 0, 0, 0.5);}
+    }   
+}
+@mixin box($color1,$color2,$left) { 
+    position: relative;
+    width: 90%;
+    margin: 1.5em auto;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    font-size: 16px;
+    background: rgba($color1, 0.2);
+    border: dashed 2px $color1;
+    border-radius: 10px;
+    box-sizing: border-box;   
+    &::before{
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: $left;
+        margin-left: -15px;
+        border: 12px solid transparent;
+        border-bottom: 12px solid $color2;
+        z-index: 2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: $left;
+        margin-left: -17px;
+        border: 14px solid transparent;
+        border-bottom: 14px solid $color1;
+        z-index: 1;
+    }
 }

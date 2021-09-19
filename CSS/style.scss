@@ -218,26 +218,17 @@ html{
                             padding: 3%;
                             margin: 0 -15px;
                             mix-blend-mode: multiply;
-                            &.li1{
-                                @include profile-li($pingreen,80% 30% 50% 50%/50%,0,0);
-                            }
-                            &.li2{
-                                @include profile-li($pinred,80% 30% 50% 50%/50%,20%,65%);
+                            &.li1{@include profile-li($pingreen,80% 30% 50% 50%/50%,0,0);}
+                            &.li2{@include profile-li($pinred,80% 30% 50% 50%/50%,20%,65%);
                                 width:33%;
                             }
-                            &.li3{
-                                @include profile-li($pinblue,80% 50%/50%,42%,5%);
-                            }
-                            &.li4{
-                                @include profile-li($pinyellow,80% 30% 50% 50%/50%,60%,68%);
-                            }
-                            &.li5{
-                                @include profile-li($pinpurple,50% 50%/50%,80%,2%);
-                            }
+                            &.li3{@include profile-li($pinblue,80% 50%/50%,42%,5%);}
+                            &.li4{@include profile-li($pinyellow,80% 30% 50% 50%/50%,60%,68%);}
+                            &.li5{@include profile-li($pinpurple,50% 50%/50%,80%,2%);}
                             p{
                                 @include font1($bk,16px);
                                 padding: 3%;
-                            }//緑　赤　青　黄色　紫
+                            }
                         } 
                         &.img-li{
                             width: 40%;
@@ -285,7 +276,7 @@ html{
     div{
         @include bg2;
         .point-ul{
-            background: radial-gradient(#ffffff 65%,#ffebbe);
+            background: radial-gradient(#ffffff 75%,#ffebbe);
             li{
                 padding: 5% 0;
                 position: relative;
@@ -293,7 +284,7 @@ html{
                     @include flex;
                     li{
                         padding: 0;
-                        &.text-li{
+                        &.text-li{//
                             width: 45%;
                             background-color: #fcf6e9;
                             border-radius: 20px;
@@ -304,26 +295,17 @@ html{
                                 font-weight: bolder;
                                 text-align: center;
                                 padding: 3% 0;
-                                &.p1{
-                                    &:before{
-                                        @include pin(url(../images/red.svg));
-                                    }
-                                }
-                                &.p2{
-                                    &:before{
-                                        @include pin(url(../images/blue.svg));
-                                    }
-                                }
-                                &.p3{
-                                    &:before{
-                                        @include pin(url(../images/yellow.svg));
-                                    }
-                                }   
+                                &.p1{ &:before{@include pin(url(../images/red.svg));} }
+                                &.p2{ &:before{@include pin(url(../images/blue.svg));} }
+                                &.p3{ &:before{@include pin(url(../images/yellow.svg));} }   
                             }
                             p{
                                 @include font1($bk,16px);
                                 padding: 2%;
                             }
+                            &.li1{@include eg-title("Find it")}
+                            &.li2{@include eg-title("Mapping")}
+                            &.li3{@include eg-title("Keep remember")}
                         } 
                         &.img-li{
                             width: 45%;
@@ -354,63 +336,51 @@ html{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        ul{
-            &.question{
-                &.q1{
-                    @include question("../images/img1.jpg");
-                    &:hover{li{background: rgba(0, 0, 0, 0.25);}}
-                    &:hover ~.box1{display: flex;}
-                    &:hover ~.box2{display: none;}
-                    &:hover ~.box3{display: none;}
-                }
-                &.q2{
-                    @include question("../images/img2.jpg");
-                    &:hover{li{background: rgba(0, 0, 0, 0.25);}}
-
-                    &:hover ~.box1{display: none;}
-                    &:hover ~.box2{display: flex;}
-                    &:hover ~.box3{display: none;}
-                }
-                &.q3{
-                    @include question("../images/img3.jpg");
-                    &:hover{li{background: rgba(0, 0, 0, 0.25);}}
-
-                    &:hover ~.box1{display: none;}
-                    &:hover ~.box2{display: none;}
-                    &:hover ~.box3{display: flex;}
-                } 
+        /*タブ*/
+        .tab_item {
+            transition: all 0.2s ease;
+            &.tab1{@include question("../images/img1.jpg");}
+            &.tab2{@include question("../images/img2.jpg");}
+            &.tab3{@include question("../images/img3.jpg");}
+        } 
+        /*ラジオボタンを全て消す*/
+        input[name="tab_item"] {
+            display: none;
+        }  
+        /*タブ切り替えの中身*/
+        .box{
+            @include flex;
+            display: none;
+            width: 100%;
+            &.box1{@include box($pinred,#ffe8e8,10%);}
+            &.box2{@include box($pinblue,#e7fbfb,50%);}
+            &.box3{@include box($pinyellow,#fff9e8,90%);}
+            .text-li{
+                width: 60%;
+                p{
+                    @include font1($bk,16px);
+                    padding: 1%;
+                }                
             }
-            &.box{
-                @include flex;
-                width: 100%;
-                &.box1{
-                    @include box($pinred,#ffe8e8,10%);
-                }
-                &.box2{
-                    @include box($pinblue,#e7fbfb,50%);
-                    display: none;
-                }
-                &.box3{
-                    @include box($pinyellow,#fff9e8,90%);
-                    display: none;
-                }
-                .text-li{
-                    width: 60%;
-                    p{
-                        @include font1($bk,16px);
-                        padding: 1%;
-                    }                
-                }
-                .img-li{
-                    width: 30%;
-                    text-align: center;
-                    img{
-                        @include img-view;
-                        width: 70%;
-                    }
+            .img-li{
+                width: 30%;
+                text-align: center;
+                img{
+                    @include img-view;
+                    width: 70%;
                 }
             }
+        } 
+        /*選択されているタブのコンテンツのみを表示*/
+        #q1:checked ~ .box1,
+        #q2:checked ~ .box2,
+        #q3:checked ~ .box3{
+          display: flex;
         }
+        /*選択されているタブのスタイルを変える*/
+        input:checked + .tab_item div {
+            background: rgba(0, 0, 0, 0.25);
+        }                    
     }
 }
 
@@ -456,4 +426,3 @@ html{
         }
     }  
 }
-

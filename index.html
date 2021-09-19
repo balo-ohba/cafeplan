@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<title>CaféPlan</title>
 	<meta name="description" content="Caféをplanする"/>
+
 	<link rel="stylesheet" href="CSS/ress.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="CSS/style.css">
@@ -104,7 +105,7 @@
 			<ul class="point-ul">
 				<li>
 					<ul>
-						<li class="text-li">   
+						<li class="text-li li1">   
 							<h4 class="p1">好きなカフェがすぐ見つかる！</h4>
 							<p>あなたの好みの条件に合わせてカフェを探せるので、行きたいカフェがすぐ見つかります。</p>
 							<p>おしゃれな内装、話題のコーヒー、ランチがおいしいカフェなど、あなたの好きが必ず見つかる！</p>
@@ -120,7 +121,7 @@
 						<li class="img-li">
 							<img src="images/view1.png">
 						</li>
-						<li class="text-li">   
+						<li class="text-li li2">   
 							<h4 class="p2">あなただけの地図を作ろう！</h4>
 							<p>興味があるカフェをマップ・リストに保存できます。</p>
 							<p>マップにピンを立てて、あなただけのオリジナルな地図を作ろう。一目で分かるように整理できるので、予定を立てるのが簡単に！</p>
@@ -130,7 +131,7 @@
 				</li>
 				<li>
 					<ul>
-						<li class="text-li">   
+						<li class="text-li li3">   
 							<h4 class="p3">あなたの思い出を写真と共に</h4>
 							<p>あなたが撮った写真やコメントともに、アルバムに残そう！</p>
 							<p>他のユーザーのお気に入りのカフェも写真やグラフと共に見られるので、あなたに合ったカフェが見つかるかも！</p>
@@ -155,22 +156,27 @@
 
 	<section id="nayami">
 		<div>
-			<ul class="question q1">
-				<li>
-					<h3>気になっているカフェがたくさんあって予定を立てるのが大変</h3>
-				</li>
-			</ul>
-			<ul class="question q2">
-				<li>
-					<h3>カフェで撮った写真をうまく活用できない</h3>
-				</li>
-			</ul>
-			<ul class="question q3">
-				<li>
-					<h3>検索するアプリとメモをしているアプリが別々なので面倒くさい</h3>
-				</li>
-			</ul>
-			
+			<input id="q1" type="radio" name="tab_item" checked>
+			<label class="tab_item tab1" for="q1">
+				<div>
+					<h3>気になっているカフェがたくさんあって予定を立てるのが大変！</h3>
+				</div>
+			</label>
+	
+			<input id="q2" type="radio" name="tab_item">
+			<label class="tab_item tab2" for="q2">
+				<div>
+					<h3>カフェで撮った写真をうまく活用できない！</h3>
+				</div>
+			</label>
+	
+			<input id="q3" type="radio" name="tab_item">
+			<label class="tab_item tab3" for="q3">
+				<div>
+					<h3>検索するアプリとメモをしているアプリが別々なので面倒くさい！</h3>
+				</div>
+			</label>
+	
 			<ul class="box box1">
 				<li class="text-li">
 					<p>Café Planなら、一目で分かるようにリスト・マップに登録できます。</p>
@@ -180,6 +186,7 @@
 					<img src="images/view3.png">
 				</li>
 			</ul>
+	
 			<ul class="box box2">
 				<li class="text-li">
 					<p>Café Planなら、写真を思い出としてアルバムに保存できるだけでなく、投稿し他のユーザーと共有することができます。</p>
@@ -189,6 +196,7 @@
 					<img src="images/view3.png">
 				</li>
 			</ul>
+	
 			<ul class="box box3">
 				<li class="text-li">
 					<p>Café Planなら、どの媒体からでもすぐにマイリストにカフェの情報を登録できます。</p>
@@ -211,8 +219,8 @@
 
  </main>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="CSS/cp.js"></script><!--自作のJS-->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <script src="CSS/cp.js"></script><!--自作のJS-->
 </body>
 </html>
