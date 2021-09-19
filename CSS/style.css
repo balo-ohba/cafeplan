@@ -397,7 +397,7 @@ html {
   margin: 1% auto;
   text-align: center;
 }
-#profile div .profile-ul2 li ul li.img-li img {
+#profile div .profile-ul2 li ul li.img-li video {
   width: 60%;
   height: auto;
   border-radius: 10px;
