@@ -18,11 +18,17 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #2A9C55;
 }
+#header h1:hover {
+  color: #fff;
+}
 #header nav ul {
   display: flex;
 }
 #header nav ul li {
   margin: 0 16px;
+}
+#header nav ul li:hover {
+  color: #fff;
 }
 #header.dnone {
   opacity: 0;

@@ -14,11 +14,17 @@ html{
     h1{
         font-family: $logo-font;
         color: $font1;
+        &:hover{
+            color: #fff;
+        }
     }
     nav ul{
         display: flex;
         li{
             margin: 0 16px;
+            &:hover{
+                color: #fff;
+            }
         }
     }
     &.dnone {
