@@ -551,6 +551,7 @@ html{
                             width: 20%;
                             img{
                                 @include img;
+                                border-radius: 50px;    
                             }
                         }
                     }
