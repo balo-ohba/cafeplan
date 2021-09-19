@@ -389,18 +389,24 @@ html{
             &.box2{@include box($pinblue,#e7fbfb,50%);}
             &.box3{@include box($pinyellow,#fff9e8,90%);}
             .text-li{
-                width: 60%;
+                width: 50%;
                 p{
                     @include font1($bk,16px);
                     padding: 1%;
                 }                
             }
             .img-li{
-                width: 30%;
+                width: 40%;
                 text-align: center;
+                position: relative;
                 img{
                     @include img-view;
-                    width: 70%;
+                    width: 40%;
+                    &.img2{
+                        position: absolute;
+                        top:5px;
+                        left:60%;
+                    }
                 }
             }
         } 

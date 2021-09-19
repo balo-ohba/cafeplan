@@ -982,7 +982,7 @@ html {
   z-index: 1;
 }
 #nayami div .box .text-li {
-  width: 60%;
+  width: 50%;
 }
 #nayami div .box .text-li p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -992,15 +992,21 @@ html {
   padding: 1%;
 }
 #nayami div .box .img-li {
-  width: 30%;
+  width: 40%;
   text-align: center;
+  position: relative;
 }
 #nayami div .box .img-li img {
   width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 1px 15px 5px rgba(128, 70, 36, 0.25);
-  width: 70%;
+  width: 40%;
+}
+#nayami div .box .img-li img.img2 {
+  position: absolute;
+  top: 5px;
+  left: 60%;
 }
 #nayami div #q1:checked ~ .box1,
 #nayami div #q2:checked ~ .box2,
