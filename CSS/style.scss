@@ -222,22 +222,22 @@ html{
                                 @include profile-li($pingreen,80% 30% 50% 50%/50%,0,0);
                             }
                             &.li2{
-                                @include profile-li($pinblue,80% 30% 50% 50%/50%,20%,65%);
+                                @include profile-li($pinred,80% 30% 50% 50%/50%,20%,65%);
                                 width:33%;
                             }
                             &.li3{
-                                @include profile-li($pinpurple,80% 50%/50%,42%,5%);
+                                @include profile-li($pinblue,80% 50%/50%,42%,5%);
                             }
                             &.li4{
-                                @include profile-li($pinred,80% 30% 50% 50%/50%,60%,68%);
+                                @include profile-li($pinyellow,80% 30% 50% 50%/50%,60%,68%);
                             }
                             &.li5{
-                                @include profile-li($pinyellow,50% 50%/50%,80%,2%);
+                                @include profile-li($pinpurple,50% 50%/50%,80%,2%);
                             }
                             p{
                                 @include font1($bk,16px);
-                                padding: 5%;
-                            }
+                                padding: 3%;
+                            }//緑　赤　青　黄色　紫
                         } 
                         &.img-li{
                             width: 40%;
@@ -343,7 +343,7 @@ html{
 }
 
 .nayami-title{
-    @include parallax('../images/img7.jpg');
+    @include parallax('../images/img8.jpg');
 }
 #nayami{
     @include bg1;
