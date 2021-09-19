@@ -494,7 +494,14 @@ html{
     @include bg1;
     div{
         @include bg2;
+        height: 678px;
+        padding: 30px;
+        background: radial-gradient(#ffffff 50%,#ffebbe);
         text-align: center;
+        iframe{
+            border-radius: 10px;
+            box-shadow: 1px 1px 15px 5px rgb(128 70 36 / 25%);
+        }
     }
 }
 

@@ -1097,7 +1097,14 @@ html {
 .app div {
   background-color: white;
   margin: 0 32px;
+  height: 678px;
+  padding: 30px;
+  background: radial-gradient(#ffffff 50%, #ffebbe);
   text-align: center;
+}
+.app div iframe {
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 5px rgba(128, 70, 36, 0.25);
 }
 
 .kyaha {
