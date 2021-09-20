@@ -1135,6 +1135,12 @@ html {
   background: radial-gradient(#ffffff 50%, #ffebbe);
   background: radial-gradient(#ffffff 75%, #ffebbe);
 }
+@media (max-width: 480px) {
+  .kyaha div {
+    margin: 0;
+    padding: 0;
+  }
+}
 .kyaha div .profile {
   padding: 1% 10%;
 }
@@ -1159,6 +1165,11 @@ html {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 480px) {
+  .kyaha div .mem li ul {
+    flex-direction: column;
+  }
+}
 .kyaha div .mem li ul li {
   padding: 0;
 }
@@ -1169,6 +1180,12 @@ html {
   max-width: 100%;
   border-radius: 10px;
   box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .kyaha div .mem li ul li.text-li {
+    width: 90%;
+    margin: 2% 0;
+  }
 }
 .kyaha div .mem li ul li.text-li.li1 {
   background: rgba(253, 141, 141, 0.2);
@@ -1201,4 +1218,12 @@ html {
   width: 100%;
   height: 160px;
   border-radius: 50px;
+}
+@media (max-width: 480px) {
+  .kyaha div .mem li ul li.img-li {
+    width: 80%;
+  }
+  .kyaha div .mem li ul li.img-li img {
+    height: 320px;
+  }
 }/*# sourceMappingURL=style.css.map */

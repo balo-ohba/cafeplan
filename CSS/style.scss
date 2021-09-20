@@ -522,6 +522,10 @@ html{
     div{
         @include bg2;
         background: radial-gradient(#ffffff 75%,#ffebbe);
+        @include sp{
+            margin: 0;
+            padding: 0;
+        }
         .profile{
             padding: 1% 10%;
             h1{
@@ -537,6 +541,9 @@ html{
                 ul{
                     @include flex;
                     justify-content: space-evenly;
+                    @include sp{
+                        flex-direction: column;
+                    }
                     li{
                         padding: 0;                      
                         &.text-li{
@@ -545,7 +552,11 @@ html{
                             min-width: 120px;
                             max-width: 100%;
                             border-radius: 10px;
-                            box-sizing: border-box;   
+                            box-sizing: border-box;  
+                            @include sp{
+                                width: 90%;
+                                margin: 2% 0;                                
+                            }
                             &.li1{
                                 background: rgba($pinred, 0.2);
                                 border: dashed 2px $pinred;                                
@@ -571,6 +582,10 @@ html{
                                 width: 100%;
                                 height: 160px;
                                 border-radius: 50px;    
+                            }
+                            @include sp{
+                                width: 80%;
+                                img{height: 320px;}                        
                             }
                         }
                     }
