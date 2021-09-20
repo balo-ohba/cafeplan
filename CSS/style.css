@@ -224,8 +224,8 @@ html {
   line-height: 2;
 }
 #profile div {
-  background-color: white;
   margin: 0 32px;
+  background: radial-gradient(#ffffff 50%, #ffebbe);
 }
 #profile div .profile-ul1 {
   height: 678px;
@@ -490,8 +490,8 @@ html {
   line-height: 2;
 }
 #point div {
-  background-color: white;
   margin: 0 32px;
+  background: radial-gradient(#ffffff 50%, #ffebbe);
 }
 #point div .point-ul {
   background: radial-gradient(#ffffff 75%, #ffebbe);
@@ -788,8 +788,8 @@ html {
   line-height: 2;
 }
 #nayami div {
-  background-color: white;
   margin: 0 32px;
+  background: radial-gradient(#ffffff 50%, #ffebbe);
   background: radial-gradient(#ffffff 85%, #ffebbe);
   display: flex;
   flex-wrap: wrap;
@@ -1095,16 +1095,31 @@ html {
   background-position: 0 0, 30px 30px;
 }
 .app div {
-  background-color: white;
   margin: 0 32px;
+  background: radial-gradient(#ffffff 50%, #ffebbe);
   height: 678px;
   padding: 30px;
   background: radial-gradient(#ffffff 50%, #ffebbe);
   text-align: center;
 }
+@media (max-width: 480px) {
+  .app div {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+}
 .app div iframe {
+  width: 338px;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 1px 1px 15px 5px rgba(128, 70, 36, 0.25);
+}
+@media (max-width: 480px) {
+  .app div iframe {
+    width: 374px;
+    height: 810px;
+  }
 }
 
 .kyaha {
@@ -1116,8 +1131,8 @@ html {
   line-height: 2;
 }
 .kyaha div {
-  background-color: white;
   margin: 0 32px;
+  background: radial-gradient(#ffffff 50%, #ffebbe);
   background: radial-gradient(#ffffff 75%, #ffebbe);
 }
 .kyaha div .profile {

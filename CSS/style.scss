@@ -498,9 +498,20 @@ html{
         padding: 30px;
         background: radial-gradient(#ffffff 50%,#ffebbe);
         text-align: center;
+        @include sp{
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
         iframe{
+            width: 338px;
+            height: 600px;
             border-radius: 10px;
             box-shadow: 1px 1px 15px 5px rgb(128 70 36 / 25%);
+            @include sp{
+                width: 374px;
+                height: 810px;
+            }
         }
     }
 }
