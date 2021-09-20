@@ -133,7 +133,7 @@ html{
         position: absolute;
         list-style: none;
         visibility: hidden;
-        animation: anime_slider_fade 12s 0s infinite;
+        animation: anime_slider_fade 20s 0s infinite;
     }
     .slider_fade > li:nth-of-type(2) {
         animation-delay: 4s;
@@ -141,18 +141,24 @@ html{
     .slider_fade > li:nth-of-type(3) {
         animation-delay: 8s;
     }  
+    .slider_fade > li:nth-of-type(4) {
+        animation-delay: 12s;
+    }  
+    .slider_fade > li:nth-of-type(5) {
+        animation-delay: 16s;
+    }          
     @keyframes anime_slider_fade {
         0% {
             visibility: visible;
             opacity: 0;
         }
-        15% {
+        10% {
             opacity: 1;
         }
-        33% {
+        20% {
             opacity: 1;
         }
-        48% {
+        30% {
             opacity: 0;
         }
         100% {
@@ -164,7 +170,7 @@ html{
         position: absolute;
         width: 100%;
         height: 678px;
-        background: rgba(51, 51, 51, 0.25);
+        background: rgba(51, 51, 51, 0.5);
         text-align: center;
         padding-top:200px;
         h2{
@@ -396,9 +402,9 @@ html{
         /*タブ*/
         .tab_item {
             transition: all 0.2s ease;
-            &.tab1{@include question("../images/img1.jpg");}
-            &.tab2{@include question("../images/img2.jpg");}
-            &.tab3{@include question("../images/img3.jpg");}
+            &.tab1{@include question("../images/img14.jpg",50% 50% 50% 70%/50% 50% 70% 60%);}
+            &.tab2{@include question("../images/img15.jpg",50% 70% 50% 50%/70% 60% 50% 50%);}
+            &.tab3{@include question("../images/img18.jpg",50% 50% 70% 50%/70% 50% 60% 60%);}
         } 
         /*ラジオボタンを全て消す*/
         input[name="tab_item"] {
@@ -409,9 +415,9 @@ html{
             @include flex;
             display: none;
             width: 100%;
-            &.box1{@include box($pinred,#ffe8e8,10%);}
+            &.box1{@include box($pinred,#ffe8e8,15%);}
             &.box2{@include box($pinblue,#e7fbfb,50%);}
-            &.box3{@include box($pinyellow,#fff9e8,90%);}
+            &.box3{@include box($pinyellow,#fff9e8,85%);}
             .text-li{
                 width: 50%;
                 p{

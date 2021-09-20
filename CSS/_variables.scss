@@ -181,13 +181,13 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     }
 }
 //#nayami
-@mixin question($img) {
+@mixin question($img,$radius) {
     position:relative;
     width: 30%;
     height: 240px;
     background: url($img);
     background-size: cover;
-    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%; 
+    border-radius: $radius;
     margin: 1%;
     div{
         position: absolute;
@@ -195,7 +195,7 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         height: 240px;
         background: rgba(0, 0, 0, 0.8);
         text-align: center;
-        border-radius: 50% 50% 50% 70%/50% 50% 70% 60%; 
+        border-radius: $radius;
         padding-top:100px;
         margin: 0;
         h3{

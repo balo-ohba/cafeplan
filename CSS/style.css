@@ -163,8 +163,8 @@ html {
   position: absolute;
   list-style: none;
   visibility: hidden;
-  -webkit-animation: anime_slider_fade 12s 0s infinite;
-          animation: anime_slider_fade 12s 0s infinite;
+  -webkit-animation: anime_slider_fade 20s 0s infinite;
+          animation: anime_slider_fade 20s 0s infinite;
 }
 #top .slider_fade > li:nth-of-type(2) {
   -webkit-animation-delay: 4s;
@@ -174,18 +174,26 @@ html {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
+#top .slider_fade > li:nth-of-type(4) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+#top .slider_fade > li:nth-of-type(5) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
 @-webkit-keyframes anime_slider_fade {
   0% {
     visibility: visible;
     opacity: 0;
   }
-  15% {
+  10% {
     opacity: 1;
   }
-  33% {
+  20% {
     opacity: 1;
   }
-  48% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -197,13 +205,13 @@ html {
     visibility: visible;
     opacity: 0;
   }
-  15% {
+  10% {
     opacity: 1;
   }
-  33% {
+  20% {
     opacity: 1;
   }
-  48% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -214,7 +222,7 @@ html {
   position: absolute;
   width: 100%;
   height: 678px;
-  background: rgba(51, 51, 51, 0.25);
+  background: rgba(51, 51, 51, 0.5);
   text-align: center;
   padding-top: 200px;
 }
@@ -835,7 +843,7 @@ html {
   position: relative;
   width: 30%;
   height: 240px;
-  background: url("../images/img1.jpg");
+  background: url("../images/img14.jpg");
   background-size: cover;
   border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
   margin: 1%;
@@ -860,9 +868,9 @@ html {
   position: relative;
   width: 30%;
   height: 240px;
-  background: url("../images/img2.jpg");
+  background: url("../images/img15.jpg");
   background-size: cover;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  border-radius: 50% 70% 50% 50%/70% 60% 50% 50%;
   margin: 1%;
 }
 #nayami div .tab_item.tab2 div {
@@ -871,7 +879,7 @@ html {
   height: 240px;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  border-radius: 50% 70% 50% 50%/70% 60% 50% 50%;
   padding-top: 100px;
   margin: 0;
 }
@@ -885,9 +893,9 @@ html {
   position: relative;
   width: 30%;
   height: 240px;
-  background: url("../images/img3.jpg");
+  background: url("../images/img18.jpg");
   background-size: cover;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  border-radius: 50% 50% 70% 50%/70% 50% 60% 60%;
   margin: 1%;
 }
 #nayami div .tab_item.tab3 div {
@@ -896,7 +904,7 @@ html {
   height: 240px;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  border-radius: 50% 50% 70% 50%/70% 50% 60% 60%;
   padding-top: 100px;
   margin: 0;
 }
@@ -933,7 +941,7 @@ html {
   content: "";
   position: absolute;
   top: -24px;
-  left: 10%;
+  left: 15%;
   margin-left: -15px;
   border: 12px solid transparent;
   border-bottom: 12px solid #ffe8e8;
@@ -943,7 +951,7 @@ html {
   content: "";
   position: absolute;
   top: -30px;
-  left: 10%;
+  left: 15%;
   margin-left: -17px;
   border: 14px solid transparent;
   border-bottom: 14px solid #FD8D8D;
@@ -999,7 +1007,7 @@ html {
   content: "";
   position: absolute;
   top: -24px;
-  left: 90%;
+  left: 85%;
   margin-left: -15px;
   border: 12px solid transparent;
   border-bottom: 12px solid #fff9e8;
@@ -1009,7 +1017,7 @@ html {
   content: "";
   position: absolute;
   top: -30px;
-  left: 90%;
+  left: 85%;
   margin-left: -17px;
   border: 14px solid transparent;
   border-bottom: 14px solid #FDDF8D;
