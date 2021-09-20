@@ -225,15 +225,16 @@ html{
                 }
             }
             img{
-                &.c1{@include catch(1%,1%)}
-                &.c2{@include catch(27%,3%) }
-                &.c3{@include catch(7%,73%)}
+                &.c1{@include catch(1%,5%)}
+                &.c2{@include catch(27%,1%)}
+                &.c3{@include catch(13%,71%)}
                 &.c4{@include catch(3%,30%)}
-                &.c5{@include catch(10%,50%)}
-                &.c6{@include catch(50%,7%)}
-                &.c7{@include catch(60%,30%)}
-                &.c8{@include catch(40%,70%)}
-                &.c9{@include catch(64%,48%)}
+                &.c5{@include catch(6%,50%)}
+                &.c6{@include catch(46%,4%)}
+                &.c7{@include catch(68%,15%)}
+                &.c8{@include catch(38%,74%)}
+                &.c9{@include catch(71%,37%)}
+                &.c10{@include catch(64%,54%)}
             }
         }
         .profile-ul2{
