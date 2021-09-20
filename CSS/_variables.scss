@@ -110,7 +110,7 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     }     
 }
 @mixin parallax($img) {
-    @include bg1;
+    @include bg1;    
     ul{
         position:relative;
         background-image: url($img);

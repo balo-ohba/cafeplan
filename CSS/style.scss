@@ -4,6 +4,7 @@ html{
 }
 @include sp{
     .pc{display: none;}
+    .sp{display: block;}
 }
 
 #header{
@@ -121,12 +122,18 @@ html{
 #top{
     width: 100%;
     height: 678px;
+    @include sp{
+        height: 339px;
+    }
     .slider_fade{
         position: relative;
         img{
             width: 100vw;
             max-width: 100%;
             height: 678px;
+            @include sp{
+                height: 339px;
+            }
         }
     }
     .slider_fade > li {
@@ -165,7 +172,6 @@ html{
             opacity: 0;
         }
     }
-
     div{
         position: absolute;
         width: 100%;
@@ -173,6 +179,9 @@ html{
         background: rgba(51, 51, 51, 0.5);
         text-align: center;
         padding-top:200px;
+        @include sp{
+            height: 339px;
+        }
         h2{
             @include font1($font1,80px);
             letter-spacing: 0.05em;
@@ -190,6 +199,12 @@ html{
             left: 11%;
             text-shadow:0 0 15px #ffffff;
             font-family: $logo-font;
+            @include sp{
+                font-size: 32px;
+                top:63%;
+                left:auto;
+                right: 0%;                
+            }
         }
     }
 }
@@ -199,11 +214,13 @@ html{
     line-height: 2;
     div{
         @include bg2;
+        @include sp{margin: 0;}
         .profile-ul1{
             height: 678px;
             text-align: center;
             position: relative;
             background: radial-gradient(#ffffff 70%,#ffebbe);
+            @include sp{height: auto;}
             li{
                 position: relative;
                 margin: 0 auto;
@@ -214,7 +231,7 @@ html{
                 border-radius: 10px;   
                 z-index: 99;   
                 border: solid 5px #fff;
-                box-shadow: 1px 1px 10px 0px rgb(128 70 36 / 25%);          
+                box-shadow: 1px 1px 10px 0px rgb(128 70 36 / 25%);        
                 h3{
                     @include font2(24px);
                     text-align: center;
@@ -223,6 +240,11 @@ html{
                 p{
                     line-height: 2.5;
                 }
+                @include sp{
+                    top: 0;
+                    width: 100%;  
+                    h3{font-size: 20px}                    
+                }  
             }
             img{
                 &.c1{@include catch(1%,5%)}
@@ -235,6 +257,11 @@ html{
                 &.c8{@include catch(38%,74%)}
                 &.c9{@include catch(71%,37%)}
                 &.c10{@include catch(64%,54%)}
+                @include sp{
+                    &.c1,&.c2,&.c3,&.c4,&.c5,&.c6,&.c7,&.c8,&.c9,&.c10{
+                        display: none;
+                    }
+                }
             }
         }
         .profile-ul2{
@@ -278,6 +305,7 @@ html{
                                 height: auto;
                                 border-radius: 20px
                             }
+                            @include sp{width: 100%;}
                         }
                         &.video-text{
                             h3{
@@ -289,6 +317,7 @@ html{
                                 @include font1($bk,16px);
                                 padding-top: 1%;
                                 text-align: center;
+                                @include sp{text-align: justify;}
                             } 
                         }
                     }      
@@ -300,12 +329,14 @@ html{
 
 .point-title{
     @include parallax('../images/img5.jpg');
+    @include sp{ul{margin: 0;}}
 }
 #point{
     @include bg1;  
     line-height: 2;
     div{
         @include bg2;
+        @include sp{margin: 0;}
         .point-ul{
             background: radial-gradient(#ffffff 75%,#ffebbe);
             li{
@@ -390,12 +421,19 @@ html{
 
 .nayami-title{
     @include parallax('../images/img8.jpg');
+    @include sp{
+        ul{
+            margin: 0;
+            h2{font-size: 26px;}
+        }
+    }
 }
 #nayami{
     @include bg1;
     line-height: 2;
     div{
         @include bg2;
+        @include sp{margin: 0;}
         background: radial-gradient(#ffffff 85%,#ffebbe);
         display: flex;
         flex-wrap: wrap;

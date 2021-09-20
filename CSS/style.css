@@ -8,6 +8,10 @@ html {
   .pc {
     display: none;
   }
+
+  .sp {
+    display: block;
+  }
 }
 #header {
   width: 100%;
@@ -151,6 +155,11 @@ html {
   width: 100%;
   height: 678px;
 }
+@media (max-width: 480px) {
+  #top {
+    height: 339px;
+  }
+}
 #top .slider_fade {
   position: relative;
 }
@@ -158,6 +167,11 @@ html {
   width: 100vw;
   max-width: 100%;
   height: 678px;
+}
+@media (max-width: 480px) {
+  #top .slider_fade img {
+    height: 339px;
+  }
 }
 #top .slider_fade > li {
   position: absolute;
@@ -226,6 +240,11 @@ html {
   text-align: center;
   padding-top: 200px;
 }
+@media (max-width: 480px) {
+  #top div {
+    height: 339px;
+  }
+}
 #top div h2 {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #2A9C55;
@@ -250,6 +269,14 @@ html {
   text-shadow: 0 0 15px #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+@media (max-width: 480px) {
+  #top div p {
+    font-size: 32px;
+    top: 63%;
+    left: auto;
+    right: 0%;
+  }
+}
 
 #profile {
   background-color: #F9EDD4;
@@ -263,11 +290,21 @@ html {
   margin: 0 32px;
   background: radial-gradient(#ffffff 50%, #ffebbe);
 }
+@media (max-width: 480px) {
+  #profile div {
+    margin: 0;
+  }
+}
 #profile div .profile-ul1 {
   height: 678px;
   text-align: center;
   position: relative;
   background: radial-gradient(#ffffff 70%, #ffebbe);
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul1 {
+    height: auto;
+  }
 }
 #profile div .profile-ul1 li {
   position: relative;
@@ -291,6 +328,15 @@ html {
 }
 #profile div .profile-ul1 li p {
   line-height: 2.5;
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul1 li {
+    top: 0;
+    width: 100%;
+  }
+  #profile div .profile-ul1 li h3 {
+    font-size: 20px;
+  }
 }
 #profile div .profile-ul1 img.c1 {
   width: 25%;
@@ -371,6 +417,11 @@ html {
   left: 54%;
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul1 img.c1, #profile div .profile-ul1 img.c2, #profile div .profile-ul1 img.c3, #profile div .profile-ul1 img.c4, #profile div .profile-ul1 img.c5, #profile div .profile-ul1 img.c6, #profile div .profile-ul1 img.c7, #profile div .profile-ul1 img.c8, #profile div .profile-ul1 img.c9, #profile div .profile-ul1 img.c10 {
+    display: none;
+  }
 }
 #profile div .profile-ul2 {
   background: radial-gradient(#ffffff 70%, #ffebbe);
@@ -463,6 +514,11 @@ html {
   height: auto;
   border-radius: 20px;
 }
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.video-li {
+    width: 100%;
+  }
+}
 #profile div .profile-ul2 li ul li.video-text h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #2A9C55;
@@ -478,6 +534,11 @@ html {
   text-align: justify;
   padding-top: 1%;
   text-align: center;
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.video-text p {
+    text-align: justify;
+  }
 }
 
 .point-title {
@@ -524,6 +585,11 @@ html {
   border-radius: 3px;
   background: #2A9C55;
 }
+@media (max-width: 480px) {
+  .point-title ul {
+    margin: 0;
+  }
+}
 
 #point {
   background-color: #F9EDD4;
@@ -536,6 +602,11 @@ html {
 #point div {
   margin: 0 32px;
   background: radial-gradient(#ffffff 50%, #ffebbe);
+}
+@media (max-width: 480px) {
+  #point div {
+    margin: 0;
+  }
 }
 #point div .point-ul {
   background: radial-gradient(#ffffff 75%, #ffebbe);
@@ -822,6 +893,14 @@ html {
   border-radius: 3px;
   background: #2A9C55;
 }
+@media (max-width: 480px) {
+  .nayami-title ul {
+    margin: 0;
+  }
+  .nayami-title ul h2 {
+    font-size: 26px;
+  }
+}
 
 #nayami {
   background-color: #F9EDD4;
@@ -843,6 +922,11 @@ html {
   /*タブ切り替えの中身*/
   /*選択されているタブのコンテンツのみを表示*/
   /*選択されているタブのスタイルを変える*/
+}
+@media (max-width: 480px) {
+  #nayami div {
+    margin: 0;
+  }
 }
 #nayami div .tab_item {
   transition: all 0.2s ease;
