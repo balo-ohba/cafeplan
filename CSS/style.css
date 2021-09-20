@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 480px) {
+  #pc {
+    display: none;
+  }
+}
 #header {
   width: 100%;
   display: flex;
