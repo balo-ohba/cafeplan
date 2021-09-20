@@ -5,7 +5,7 @@ html {
 }
 
 @media (max-width: 480px) {
-  #pc {
+  .pc {
     display: none;
   }
 }
@@ -19,6 +19,14 @@ html {
   background-color: rgba(249, 237, 212, 0.699);
   /*メニューボタンをクリックした際に付与されるpanelactiveクラスがついたら*/
 }
+@media (max-width: 480px) {
+  #header {
+    background-color: rgba(249, 237, 212, 0.9);
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 #header h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #2A9C55;
@@ -26,14 +34,29 @@ html {
 #header h1:hover {
   color: #fff;
 }
+@media (max-width: 480px) {
+  #header h1 {
+    padding: 1%;
+  }
+}
 #header nav ul {
   display: flex;
+}
+@media (max-width: 480px) {
+  #header nav ul {
+    flex-direction: column;
+  }
 }
 #header nav ul li {
   margin: 0 16px;
 }
 #header nav ul li:hover {
   color: #fff;
+}
+@media (max-width: 480px) {
+  #header nav ul li {
+    margin: 5% 16px;
+  }
 }
 #header.dnone {
   opacity: 0;
@@ -246,7 +269,7 @@ html {
   width: 50%;
   background-color: #F9EDD4;
   border-radius: 10px;
-  z-index: 100;
+  z-index: 99;
   border: solid 5px #fff;
   box-shadow: 1px 1px 10px 0px rgba(128, 70, 36, 0.25);
 }

@@ -3,7 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 @include sp{
-    #pc{display: none;}
+    .pc{display: none;}
 }
 
 #header{
@@ -14,19 +14,34 @@ html{
     z-index: 100;
     padding: 1% 5%;
     background-color: rgba(249, 237, 212, 0.699);
+    @include sp{
+        background-color: rgba(249, 237, 212, 0.9);
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
     h1{
         font-family: $logo-font;
         color: $font1;
         &:hover{
             color: #fff;
         }
+        @include sp{
+            padding: 1%;
+        }
     }
     nav ul{
         display: flex;
+        @include sp{
+            flex-direction: column;
+        }
         li{
             margin: 0 16px;
             &:hover{
                 color: #fff;
+            }
+            @include sp{
+                margin: 5% 16px;
             }
         }
     }
@@ -191,7 +206,7 @@ html{
                 width: 50%;                
                 background-color: $bg;
                 border-radius: 10px;   
-                z-index: 100;   
+                z-index: 99;   
                 border: solid 5px #fff;
                 box-shadow: 1px 1px 10px 0px rgb(128 70 36 / 25%);          
                 h3{
