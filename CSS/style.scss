@@ -2,13 +2,6 @@
 html{
     scroll-behavior: smooth;
 }
-.sp{
-    display: none;
-}
-@include sp{
-    .pc{display: none;}
-    .sp{display: block;}
-}
 
 #header{
     width: 100%;
@@ -252,6 +245,10 @@ html{
                 @include sp{
                     top: 0;
                     width: 100%;  
+                    background-color: rgba(255, 255, 255, 0);
+                    border-radius: 0%;
+                    border: none;
+                    box-shadow: none;
                     h3{font-size: 20px}                    
                 }  
             }
@@ -282,16 +279,30 @@ html{
                     li{
                         padding: 0;
                         &.text-li{
-                            padding: 3%;
+                            padding: 3%; 
                             margin: 0 -15px;
                             mix-blend-mode: multiply;
-                            &.li1{@include profile-li($pingreen,80% 30% 50% 50%/50%,0,0);}
-                            &.li2{@include profile-li($pinred,80% 30% 50% 50%/50%,20%,65%);
-                                width:33%;
+                            &.li1{// 緑　青　紫　赤　黄色
+                                @include profile-li($pingreen,80% 30% 50% 50%/50%,0,0);
+                                @include sp{@include profile-li-sp($pingreen);}
                             }
-                            &.li3{@include profile-li($pinblue,80% 50%/50%,42%,5%);}
-                            &.li4{@include profile-li($pinyellow,80% 30% 50% 50%/50%,60%,68%);}
-                            &.li5{@include profile-li($pinpurple,50% 50%/50%,80%,2%);}
+                            &.li2{
+                                @include profile-li($pinred,80% 30% 50% 50%/50%,20%,65%);
+                                width:33%;
+                                @include sp{@include profile-li-sp($pinblue);}
+                            }
+                            &.li3{
+                                @include profile-li($pinblue,80% 50%/50%,42%,5%);
+                                @include sp{@include profile-li-sp($pinpurple);}
+                            }
+                            &.li4{
+                                @include profile-li($pinyellow,80% 30% 50% 50%/50%,60%,68%);
+                                @include sp{@include profile-li-sp($pinred);}
+                            }
+                            &.li5{
+                                @include profile-li($pinpurple,50% 50%/50%,80%,2%);
+                                @include sp{@include profile-li-sp($pinyellow);}
+                            }
                             p{
                                 @include font1($bk,16px);
                                 padding: 3%;
@@ -301,6 +312,7 @@ html{
                             width: 40%;
                             margin: 1% auto;
                             text-align: center;
+                            @include sp{width: 50%;}
                             video{
                                 @include img-view;
                                 width: 78%;
@@ -321,6 +333,7 @@ html{
                                 @include font2(20px);
                                 padding: 2% 0;
                                 text-align: center;
+                                @include sp{text-align: justify;}
                             }
                             p{
                                 @include font1($bk,16px);
@@ -353,6 +366,7 @@ html{
                 position: relative;
                 ul{
                     @include flex;
+                    &.sp{display: none;}
                     @include sp{
                         display: block;
                         &.pc{display: none;}
@@ -451,10 +465,15 @@ html{
 
 .nayami-title{
     @include parallax('../images/img8.jpg');
+    ul{h2{&.sp{display: none;}}}
     @include sp{
         ul{
             margin: 0;
-            h2{font-size: 26px;}
+            h2{
+                &.pc{display: none;}
+                &.sp{display: block;}
+                font-size: 26px;
+            }
         }
     }
 }

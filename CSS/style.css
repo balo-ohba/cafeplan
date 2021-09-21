@@ -4,19 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.sp {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .pc {
-    display: none;
-  }
-
-  .sp {
-    display: block;
-  }
-}
 #header {
   width: 100%;
   display: flex;
@@ -345,6 +332,10 @@ html {
   #profile div .profile-ul1 li {
     top: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0%;
+    border: none;
+    box-shadow: none;
   }
   #profile div .profile-ul1 li h3 {
     font-size: 20px;
@@ -461,6 +452,17 @@ html {
   top: 0;
   left: 0;
 }
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.text-li.li1 {
+    background-color: #8CE880;
+    box-shadow: 0px 0px 10px 5px #8CE880;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 #profile div .profile-ul2 li ul li.text-li.li2 {
   background-color: #FD8D8D;
   border-radius: 80% 30% 50% 50%/50%;
@@ -471,6 +473,17 @@ html {
   left: 65%;
   width: 33%;
 }
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.text-li.li2 {
+    background-color: #83EDED;
+    box-shadow: 0px 0px 10px 5px #83EDED;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 #profile div .profile-ul2 li ul li.text-li.li3 {
   background-color: #83EDED;
   border-radius: 80% 50%/50%;
@@ -479,6 +492,17 @@ html {
   width: 35%;
   top: 42%;
   left: 5%;
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.text-li.li3 {
+    background-color: #C98DFD;
+    box-shadow: 0px 0px 10px 5px #C98DFD;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
 }
 #profile div .profile-ul2 li ul li.text-li.li4 {
   background-color: #FDDF8D;
@@ -489,6 +513,17 @@ html {
   top: 60%;
   left: 68%;
 }
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.text-li.li4 {
+    background-color: #FD8D8D;
+    box-shadow: 0px 0px 10px 5px #FD8D8D;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 #profile div .profile-ul2 li ul li.text-li.li5 {
   background-color: #C98DFD;
   border-radius: 50% 50%/50%;
@@ -497,6 +532,17 @@ html {
   width: 35%;
   top: 80%;
   left: 2%;
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.text-li.li5 {
+    background-color: #FDDF8D;
+    box-shadow: 0px 0px 10px 5px #FDDF8D;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
 }
 #profile div .profile-ul2 li ul li.text-li p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -509,6 +555,11 @@ html {
   width: 40%;
   margin: 1% auto;
   text-align: center;
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.img-li {
+    width: 50%;
+  }
 }
 #profile div .profile-ul2 li ul li.img-li video {
   width: 60%;
@@ -538,6 +589,11 @@ html {
   font-weight: bolder;
   padding: 2% 0;
   text-align: center;
+}
+@media (max-width: 480px) {
+  #profile div .profile-ul2 li ul li.video-text h3 {
+    text-align: justify;
+  }
 }
 #profile div .profile-ul2 li ul li.video-text p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -631,6 +687,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#point div .point-ul li ul.sp {
+  display: none;
 }
 @media (max-width: 480px) {
   #point div .point-ul li ul {
@@ -971,12 +1030,21 @@ html {
   border-radius: 3px;
   background: #2A9C55;
 }
+.nayami-title ul h2.sp {
+  display: none;
+}
 @media (max-width: 480px) {
   .nayami-title ul {
     margin: 0;
   }
   .nayami-title ul h2 {
     font-size: 26px;
+  }
+  .nayami-title ul h2.pc {
+    display: none;
+  }
+  .nayami-title ul h2.sp {
+    display: block;
   }
 }
 
