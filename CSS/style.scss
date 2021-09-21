@@ -15,12 +15,13 @@ html{
     z-index: 100;
     padding: 1% 5%;
     background-color: rgba(249, 237, 212, 0.699);
-    @include sp{
-        background-color: rgba(249, 237, 212, 0.9);
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-    }
+    @include sp{&.pc{display: none;}}
+    // @include sp{
+    //     background-color: rgba(249, 237, 212, 0.9);
+    //     text-align: center;
+    //     justify-content: space-around;
+    //     align-items: center;
+    // }
     h1{
         font-family: $logo-font;
         color: $font1;
@@ -105,6 +106,7 @@ html{
         animation-fill-mode: forwards;
         opacity: 0;
         display: block;
+        @include sp{&.pc{display: none;}}
     }
 
     @keyframes fadeDownAnime{
@@ -190,6 +192,11 @@ html{
             left: 10%;
             text-shadow:0 0 15px #ffffff;
             font-family: $logo-font;
+            @include sp{
+                font-size: 72px;
+                top:25%;
+                left:8px;              
+            }
         }
         p{
             @include font1($font1,40px);
@@ -200,10 +207,9 @@ html{
             text-shadow:0 0 15px #ffffff;
             font-family: $logo-font;
             @include sp{
-                font-size: 32px;
-                top:63%;
-                left:auto;
-                right: 0%;                
+                font-size: 40px;
+                top:50%;
+                left:8px;              
             }
         }
     }
@@ -511,6 +517,10 @@ html{
             text-align: center;
             padding: 300px 5% 0;
             text-shadow:0 0 15px #ffffff;
+            @include sp{
+                font-size: 36px;
+                padding: 300px 2% 0;
+            }
         }  
         div{
             position:relative;
@@ -530,7 +540,12 @@ html{
             a{
                 display:block;
                 font-weight: bolder;
-            }       
+            }   
+            @include sp{
+                width: 80%;
+                margin: 5% auto;
+                padding: 3%;
+            }    
         }
     }  
 }
@@ -550,6 +565,11 @@ html{
                 &:hover{color: $bk;}
             }
         }
+        @include sp{
+            display: block;
+            padding: 2%;
+            text-align: center;
+        }    
     }
 }
 

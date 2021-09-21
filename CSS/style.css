@@ -24,11 +24,8 @@ html {
   /*メニューボタンをクリックした際に付与されるpanelactiveクラスがついたら*/
 }
 @media (max-width: 480px) {
-  #header {
-    background-color: rgba(249, 237, 212, 0.9);
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
+  #header.pc {
+    display: none;
   }
 }
 #header h1 {
@@ -129,6 +126,11 @@ html {
           animation-fill-mode: forwards;
   opacity: 0;
   display: block;
+}
+@media (max-width: 480px) {
+  .openbtn.fadeDown.pc {
+    display: none;
+  }
 }
 @-webkit-keyframes fadeDownAnime {
   from {
@@ -257,6 +259,13 @@ html {
   text-shadow: 0 0 15px #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+@media (max-width: 480px) {
+  #top div h2 {
+    font-size: 72px;
+    top: 25%;
+    left: 8px;
+  }
+}
 #top div p {
   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   color: #2A9C55;
@@ -271,10 +280,9 @@ html {
 }
 @media (max-width: 480px) {
   #top div p {
-    font-size: 32px;
-    top: 63%;
-    left: auto;
-    right: 0%;
+    font-size: 40px;
+    top: 50%;
+    left: 8px;
   }
 }
 
@@ -1176,6 +1184,12 @@ html {
   padding: 300px 5% 0;
   text-shadow: 0 0 15px #ffffff;
 }
+@media (max-width: 480px) {
+  #in div h2 {
+    font-size: 36px;
+    padding: 300px 2% 0;
+  }
+}
 #in div div {
   position: relative;
   width: 30%;
@@ -1196,6 +1210,13 @@ html {
   display: block;
   font-weight: bolder;
 }
+@media (max-width: 480px) {
+  #in div div {
+    width: 80%;
+    margin: 5% auto;
+    padding: 3%;
+  }
+}
 
 #footer {
   width: 100%;
@@ -1213,6 +1234,13 @@ html {
 }
 #footer div p a:hover {
   color: #141414;
+}
+@media (max-width: 480px) {
+  #footer div {
+    display: block;
+    padding: 2%;
+    text-align: center;
+  }
 }
 
 .app {

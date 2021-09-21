@@ -24,5 +24,3 @@ $("#g-navi li a").click(function () {//ナビゲーションのリンクがク�
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#header").removeClass('panelactive');//ヘッダーのpanelactiveクラスも除去
 });
-
-//アプリ画面スライド
