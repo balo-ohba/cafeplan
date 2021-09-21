@@ -2,6 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
+.sp{
+    display: none;
+}
 @include sp{
     .pc{display: none;}
     .sp{display: block;}
@@ -350,6 +353,11 @@ html{
                 position: relative;
                 ul{
                     @include flex;
+                    @include sp{
+                        display: block;
+                        &.pc{display: none;}
+                        &.sp{display: block;}
+                    }
                     li{
                         padding: 0;
                         &.text-li{
@@ -374,6 +382,11 @@ html{
                             &.li1{@include eg-title("Find it");}
                             &.li2{@include eg-title("Mapping");}
                             &.li3{@include eg-title("Keep remember");}
+                            @include sp{
+                                width: 90%;
+                                margin: 0 auto;
+                                &.li2{@include eg-title-li2none;}
+                            }
                         } 
                         &.main_imgBox{
                             width: 45%;
@@ -381,6 +394,14 @@ html{
                             text-align: center;
                             overflow: hidden;
                             position: relative;
+                            @include sp{
+                                width: 75%;
+                                height: 420px;
+                                margin: 0 auto;
+                                &.li1{@include eg-title-sp("Find it");}
+                                &.li2{@include eg-title-sp("Mapping");}
+                                &.li3{@include eg-title-sp("Keep remember");}
+                            }  
                             .main_img{
                                 margin: 0;
                                 width: 100%;
@@ -393,6 +414,9 @@ html{
                                 top: 0;
                                 -webkit-animation: anime 16s 0s infinite;
                                 animation: anime 16s 0s infinite; 
+                                @include sp{
+                                    margin: 20% auto 0;
+                                }
                                 img{
                                     @include img-view;
                                     margin: 3%;
@@ -413,7 +437,7 @@ html{
                                 25% {opacity: 1;}
                                 38% {opacity: 0; z-index:9;}
                                 100% { opacity: 0;}
-                            }                                                                                 
+                            }                                                                               
                         } 
                     }
                     &.scrolldown{

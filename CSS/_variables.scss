@@ -179,6 +179,25 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         transform: rotate( -5deg );
     }
 }
+@mixin eg-title-li2none{
+    &::before{
+        content: "";
+        display: none;
+    }
+}
+@mixin eg-title-sp($eg) {
+    &::before{
+        content: $eg;
+        font-family: 'Sacramento', cursive;        
+        color: $font1;
+        font-size: 40px;
+        font-weight: bolder;       
+        position: absolute;
+        top: 0%;  
+        left: 0%;
+        transform: rotate( -5deg );
+    }
+}
 //#nayami
 @mixin question($img,$radius) {
     position:relative;

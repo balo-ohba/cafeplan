@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.sp {
+  display: none;
+}
+
 @media (max-width: 480px) {
   .pc {
     display: none;
@@ -628,6 +632,17 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  #point div .point-ul li ul {
+    display: block;
+  }
+  #point div .point-ul li ul.pc {
+    display: none;
+  }
+  #point div .point-ul li ul.sp {
+    display: block;
+  }
+}
 #point div .point-ul li ul li {
   padding: 0;
 }
@@ -723,12 +738,62 @@ html {
   left: -5%;
   transform: rotate(-5deg);
 }
+@media (max-width: 480px) {
+  #point div .point-ul li ul li.text-li {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #point div .point-ul li ul li.text-li.li2::before {
+    content: "";
+    display: none;
+  }
+}
 #point div .point-ul li ul li.main_imgBox {
   width: 45%;
   height: 600px;
   text-align: center;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 480px) {
+  #point div .point-ul li ul li.main_imgBox {
+    width: 75%;
+    height: 420px;
+    margin: 0 auto;
+  }
+  #point div .point-ul li ul li.main_imgBox.li1::before {
+    content: "Find it";
+    font-family: "Sacramento", cursive;
+    color: #2A9C55;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotate(-5deg);
+  }
+  #point div .point-ul li ul li.main_imgBox.li2::before {
+    content: "Mapping";
+    font-family: "Sacramento", cursive;
+    color: #2A9C55;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotate(-5deg);
+  }
+  #point div .point-ul li ul li.main_imgBox.li3::before {
+    content: "Keep remember";
+    font-family: "Sacramento", cursive;
+    color: #2A9C55;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotate(-5deg);
+  }
 }
 #point div .point-ul li ul li.main_imgBox .main_img {
   margin: 0;
@@ -742,6 +807,11 @@ html {
   top: 0;
   -webkit-animation: anime 16s 0s infinite;
   animation: anime 16s 0s infinite;
+}
+@media (max-width: 480px) {
+  #point div .point-ul li ul li.main_imgBox .main_img {
+    margin: 20% auto 0;
+  }
 }
 #point div .point-ul li ul li.main_imgBox .main_img img {
   width: 60%;
