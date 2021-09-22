@@ -12,34 +12,19 @@ html{
     padding: 1% 5%;
     background-color: rgba(249, 237, 212, 0.699);
     @include sp{&.pc{display: none;}}
-    // @include sp{
-    //     background-color: rgba(249, 237, 212, 0.9);
-    //     text-align: center;
-    //     justify-content: space-around;
-    //     align-items: center;
-    // }
     h1{
         font-family: $logo-font;
         color: $font1;
         &:hover{
             color: #fff;
         }
-        @include sp{
-            padding: 1%;
-        }
     }
     nav ul{
         display: flex;
-        @include sp{
-            flex-direction: column;
-        }
         li{
             margin: 0 16px;
             &:hover{
                 color: #fff;
-            }
-            @include sp{
-                margin: 5% 16px;
             }
         }
     }
