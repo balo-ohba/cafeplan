@@ -120,6 +120,9 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         background-repeat: no-repeat;    
         height: 339px;        
         margin: 0 32px;
+        @include sp{
+            background-attachment:inherit;
+        }
         li{
             position: absolute;
             width: 100%;
@@ -166,7 +169,7 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
 }
 @mixin profile-li-sp($color){
     background-color: $color;
-    box-shadow: 0px 0px 10px 5px $color;
+    box-shadow: 0px 0px 15px 10px $color;
     position: relative;
     width: 100%;      
     top: 0;   
@@ -216,6 +219,9 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
     background-size: cover;
     border-radius: $radius;
     margin: 1%;
+    @include sp{
+        height: 120px;
+    }
     div{
         position: absolute;
         width: 100%;
@@ -225,8 +231,17 @@ $logo-font: Georgia, 'Times New Roman', Times, serif;
         border-radius: $radius;
         padding-top:100px;
         margin: 0;
+        @include sp{
+            height: 120px;
+            padding-top:50px;
+        }
         h3{
             color: #ffffff;
+            &.sp{display: none;}
+            @include sp{
+                &.pc{display: none;}
+                &.sp{display: block;}
+            }
         }
     }  
     &:hover{
@@ -272,4 +287,117 @@ $sp: 480px;  // スマホ
   @media (max-width: ($sp)) {
     @content;
   }
+}
+
+
+/* header */
+.menu-drawer .btn {
+    font-size: 32px;
+    background: rgba(253, 160, 21, 0.7);
+    width: 64px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 8px;
+    padding: 16px;
+    top: 0;
+    right: 0;
+}
+.menu-drawer .btn::before, .menu-drawer .btn::after {
+    font-family: "Font Awesome 5 Free" ;
+    font-weight: 900;
+    color: #FDF4E5;
+}
+.menu-drawer .btn::before {
+    content: "\f0c9";
+}
+.menu-drawer .btn::after {
+    content: "\f00d";
+}
+.menu-drawer .other {
+    background:  rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.menu-drawer .content {
+    display: table;
+    border: 1px solid  #ebebeb;
+    border-radius: 5px;
+    background: rgba(255, 241, 220) ;
+    width: 100vw;
+    top: 80px;
+    right: 0;
+    text-align: center;
+}
+@media screen and (min-width: 415px) {
+    .menu-drawer .content {
+        width: 30%;
+    }
+}
+.menu-drawer .content h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: rgba(253, 160, 21);
+    margin: 0;
+    padding: .7em;
+    border-radius: 4px 4px 0 0;
+}
+.menu-drawer .content a {
+    border-bottom: 1px solid #ebebeb;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: #858585;
+    display: block;
+    width: 100%;
+}
+.menu-drawer .content a:hover{
+    color:rgb(235, 138, 28);
+}
+.menu-drawer .content .menuworks{
+    padding: 1rem 3vw;
+    text-align: left;
+    line-height: 1.5
+}
+.menu-drawer .btn,.menu-drawer .content,.menu-drawer .other {
+    position: fixed;
+}
+.menu-drawer .btn,.menu-drawer .content {
+    z-index: 1001;
+}
+.menu-drawer .other {
+    z-index: 1000;
+}
+.menu-drawer #chk {
+    display: none;
+}
+/* 表示(close) */
+.menu-drawer #chk ~ .btn::before {
+    display: block;
+}
+.menu-drawer #chk ~ .btn::after {
+    display: none;
+}
+.menu-drawer #chk ~ .other {
+    display: none;
+}
+/* 表示(open) */
+.menu-drawer #chk:checked ~ .btn::before {
+    display: none;
+}
+.menu-drawer #chk:checked ~ .btn::after {
+    display: block;
+}
+.menu-drawer #chk:checked ~ .other {
+    display: block;
+}
+.menu-drawer #chk ~ .content {
+    transform: translate(350%, 0);
+    transition: transform 0.3s ease-in-out;
+}
+.menu-drawer #chk:checked ~ .content {
+    transform: none;
 }

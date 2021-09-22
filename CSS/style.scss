@@ -508,6 +508,15 @@ html{
             &.box3{@include box($pinyellow,#fff9e8,85%);}
             .text-li{
                 width: 50%;
+                @include sp{width: 100%;}
+                h3{
+                    display: none;
+                    @include sp{
+                        display: block;
+                        color: $font1;
+                        padding: 1% 0;
+                    }
+                }
                 p{
                     @include font1($bk,16px);
                     padding: 1%;
@@ -517,6 +526,7 @@ html{
                 width: 40%;
                 text-align: center;
                 position: relative;
+                @include sp{display: none;}
                 img{
                     @include img-view;
                     width: 40%;
@@ -548,7 +558,10 @@ html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;    
-    height: 638px;        
+    height: 638px;  
+    @include sp{
+        background-attachment:inherit;
+    }      
     div{
         position: absolute;
         width: 100%;
